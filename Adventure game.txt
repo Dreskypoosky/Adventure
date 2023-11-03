@@ -1,0 +1,2072 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cstdlib>
+#include <conio.h>
+#define LightCyan cout<<"\033[3m\033[36m"
+#define LightRed cout<<"\033[1m\033[31m"
+#define LightGreen cout<<"\033[1m\033[32m"
+#define LightYellow cout<<"\033[1m\033[33"
+#define White cout<<"\033[1m\033[37m"
+#define erase cout<<"\033[2J"
+#define ConsoleClear cout<<system("clear")
+#define alert  cout<<"\a"
+#define Blue cout<<"\033[3m\033[34m"
+#define Yellow cout<<"\033[3m\033[33m"
+#define c cout<<
+using namespace std;
+int
+main()
+{
+
+	LightGreen;
+	int a = 0, b = 0, C = 0, d = 0, e = 0, f = 0, g = 0, h = 0, i = 0, j = 0, k = 0, l = 0, m = 0, n = 0, o = 0, p = 0, q = 0, r = 0, s = 0, t = 0, u = 0, v = 0, w = 0, x = 0, y = 0, z = 0;
+	string FirstName, LastName, NameConfirm;
+	string GameChoice1, GameChoice3, GameEndChoice, choice1, GameChoice4, GameChoice5, GameChoice6, GameChoice;
+	char ControlChoice, page, infochoice, GameChoice2;
+	//Variables
+
+	c "Before beginning this game, I ask you, what is your name? (Enter your first and last name separately)\n";
+	c "Firstname: "; cin >> FirstName;
+	c "Lastname:  "; cin >> LastName;
+NameConfirmation:
+	c "You typed: " << FirstName << " " << LastName << "\n";
+	c "Is this the name you wish to play the game with? (yes/no)\n";
+	cin >> NameConfirm;
+	if (!(NameConfirm == "yes" || NameConfirm == "Yes"))
+	{
+		ConsoleClear;
+		erase;
+		c "What is your name?\n";
+		c "Firstname: "; cin >> FirstName;
+		c "Lastname:  "; cin >> LastName;
+		goto NameConfirmation;
+	}
+	ConsoleClear;
+	erase;
+	c "\nAh yes, hello " << FirstName << " " << LastName <<
+		", welcome to my game.\n";
+	c "\nThis game falls under the choose your own adventure format, the decisions that you make WILL have an effect on the outcome of your playthrough.\n";
+	c "\n The name of this game you wonder? It is called";
+	LightRed;
+	c " The Toy Shop of Terror.\n";
+	LightGreen;
+	c "\n I now ask you.";
+
+Menu:
+
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 1)
+	{
+		c"Congrats you've found your first ending! Play again to find the others!\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 2)
+	{
+		c "2 endings found, great job! Keep playing to find the rest!\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 3)
+	{
+		c "3 endings! Hope you're enjoying the game so far.\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 4)
+	{
+		c "You've really found 4 endings so far!? Don't stop now, get the rest!\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 5)
+	{
+		c "No way you've found 5 of the endings so far. Is this like your favorite game or something?\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 6)
+	{
+		c "I'm actually so happy someone like you was willing to play long enough to get 6 endings! Keep it up!\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 7)
+	{
+		c "How did you even have enough time to get 7 endings is the real question?\n Did you even read the story?🤨\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 8)
+	{
+	    c "You DO NOT want to know how long this game took me to make!\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 9)
+	{
+	    c "There's only a couple more endings. I hope you've enjoyed the journey.\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 10)
+	{
+	    c "Ten, the big double-digit. I wonder, did you die or survive on this one?\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 11)
+	{
+	    c "Eleven endings for eleven days I didn't sleep. Don't worry though there's still more left😃\n\n";
+	}
+	if (a + b + C + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z == 12)
+	{
+	    c "You did it, you really did it! Twelve endings completed. Assuming you did this and actually read the story, I'm touched.\n I can't believe someone actually sat through this entire thing. You've got way too much free time.\n This is the end for now. I may add more content to the game later on.\n But until then, goodbye, and thank you for playing!\n";
+	    return 0;
+	}
+	c " Do you wish to play now?\n";
+	c " Options: y, controls(type controls), More info(type more)\n";
+	cin >> choice1;
+
+
+
+	if (choice1 == "controls" || choice1 == "Controls")
+	{
+		c "\nYou will be prompted to make choices and will be told what to type in order to perform that action.\n";
+		c "On every page you will have the option to go back and forth a page as long as you type (f) to go forward a page, and (b) to go back one.\n";
+		c "\n Do you wish to play now? (y/n)\n";
+		cin >> ControlChoice;
+		if (ControlChoice == 'y' || ControlChoice == 'Y')
+		{
+			ConsoleClear;
+			erase;
+			alert;
+			goto GameBegin;
+		}
+		if (ControlChoice == 'n' || ControlChoice == 'N')
+		{
+			ConsoleClear;
+			erase;
+			goto Menu;
+		}
+	}
+	if (choice1 == "more" || choice1 == "More")
+	{
+		c "\nThis game is based off a real book titled The Toy Shop of Terror from the Choose your own nightmare series, created by Laban Carrick Hill, published in 1997\n";
+		c "I myself, am unaware of the amount of endings you may encounter during your playthrough.\n";
+		c "\nDo you wish to play now? ";
+		c "y/n? \n";
+		cin >> infochoice;
+		if (infochoice == 'y' || infochoice == 'Y')
+		{
+			ConsoleClear;
+			erase;
+			alert;
+			goto GameBegin;
+
+		}
+		if (infochoice == 'n' || infochoice == 'N')
+		{
+			ConsoleClear;
+			erase;
+			goto Menu;
+		}
+	}
+	if (choice1 == "n" || choice1 == "N")
+	{
+		ConsoleClear;
+		erase;
+		goto Menu;
+	}
+	if (choice1 == "y" || choice1 == "Y")
+	{
+		ConsoleClear;
+		erase;
+		alert;
+	GameBegin:
+		White;
+		c "\nPage 1:\n\n";
+		LightCyan;
+		c "A crisp breeze whips around the school yard, sending wayward leaves into little whirlpools. You pull up your      jacket zipper and glance at the gray sky.\n";
+		c "\"Think it's going to snow " << FirstName <<
+			"?\" you ask your best friend, Evan Tomchin. \"I'm freezing.\"\n";
+		c "Evan sinks his hands deeper into his pockets. He's wearing only a jean jacket with a patch that says \"Munch on\"     stitched to the right shoulder. He has it buttoned up to his. \"If I thought it was, I would have worn my down parka.\" He stomps his feet on the sidewalk\n";
+		c "The two of you hurry down Elm Street against a frigid wind. Elm Street used to be lined with giant elms, but     twenty years ago the trees all died of Dutch elm disease. The bare street provides no protection from the icy air.\n";
+		c "Evan points down Pell Street. \"Let's take Pell to Maple and then cut back to our houses,\" he suggests. \"There won't be as much wind.\"\n";
+		c "\"I'm right behind you,\" you answer.\n";
+		c "Evan pushes you in front of him. \"No, I'm right behind you,\" he says,\"You're the perfect shield against the wind.\"\n\n";
+		White;
+		c "\nTurn page(f)\n";
+		cin >> page;
+		if (page == 'f' || page == 'F')
+		{
+			ConsoleClear;
+			erase;
+			alert;
+		Page2:
+			c "\nPage 2:\n\n";
+			LightCyan;
+			c "You spin and get behind him: \"You're the one with the fat head,\" you reply. \"You could block out the sun with that forehead.\"\n";
+			c "\"Very funny,\" Evan sneers. His head isn't really that big, considering his size. He's a good six inches taller than everyone else in your class. You like having the biggest kid as your best friend. It makes you feel safe.\n";
+			c "\"Come on. I'm turning into an icicle,\" you say. The two of you tromp four blocks down Pell and turn right up Maple. Maple Street runs through the business district of Freeville. But at this time of day, the street is usually deserted.\n";
+			c "That's why you're surprised when you look down the street and see a huge crowd of people forming at the corner of Mission and Maple. You nudge Evan. \"Hey, what's going on up there?\"\n";
+			c "\"Looks like the line for Santa Claus at the mall,\" he replies. It's the week before Thanksgiving.\n";
+			c "You and Evan walk toward the crowd. When you see what everyone's gathering around, you stop dead in your tracks.\n";
+			c "Just ahead, the upper branches of Freville's famous Camperdown Maple are lit up like a Christmas tree. But it's what's below the lights that really shocks you. A low building that looks like a castle has been constructed around the bottom half of the tree.\n";
+			c "People are laughing and milling around it.\n";
+			c "The Camperdown Maple is the oldest and largest tree in town, with a 215-inch truck circumference. It's stood at the corner of Maple and Mission in front of the old church for as long as anyone can remember. Everyone wondered what would happen to the Camperdown Maple when the church closed last year. Now you see what's happened to it.\n";
+			c "And you're not pleased ... or are you?\n";
+			c "\"Cool!\" Evan says.\n";
+			White;
+			c "\nTurn page(f)\n";
+			c "Go back a page(b)\n";
+			cin >> page;
+			if (page == 'b' || page == 'B')
+			{
+				ConsoleClear;
+				erase;
+				alert;
+				goto GameBegin;
+			}
+			if (page == 'f' || page == 'F')
+			{
+				ConsoleClear;
+				erase;
+				alert;
+			Page3:
+				c "Page 3:\n\n";
+				LightCyan;
+				c "You're not so sure. The top of the tree is covered with lights, and the trunk is almost completely enclosed by one of the most marvelous buildings you've ever seen. The building is decorated with spinning wheels and electric trains circling each floor.\n";
+				c "\"I think it's a castle,\"you whisper in awe.\n";
+				c "\"And look what it's made of,\" Evan responds.\n";
+				c "The castle is made of rock candy, with a huge gingerbread drawbridge. Dozens of people are hurrying back and forth across the bridge, their arms full of the most spectacular toys you've ever seen.\n";
+				c "\"How did they build this so fast?\" you ask. \"I mean, nothing was here last week.\"\n";
+				c "\"Pretty cool, huh?\" Evan replies. He doesn't seem to care how long it took to build the castle. He just wants to check out the toys.\n";
+				c "\"Let's go,\" he calls, dashing to the drawbridge. You hang back. You're pretty upset that the town has let the Camperdown Maple be enclosed by a building. It's your favorite tree, and now you can't see or enjoy it. The majestic maple has been turned into a silly toy. Its great, spreading limbs now look more like an amusement park than one of Freeville's natural wonders. And how could a building this large go up in one week?\n";
+				c "Out of principle you want to boycott the toy castle, but it does look cool.\n";
+				White;
+				c "\nDo you go in or stand by your principles? (type go/stand)\n";
+				c "\n(Be aware that one you make a decision regarding the path you choose, you no longer can go back to the previous page where the choice was made.)\n";
+				c "Go back a page(b)\n";
+				cin >> GameChoice1;
+				if (GameChoice1 == "b" || GameChoice1 == "B")
+				{
+					ConsoleClear;
+					erase;
+					alert;
+					goto Page2;
+				}
+				if (GameChoice1 == "stand" || GameChoice1 == "Stand")
+				{
+					ConsoleClear;
+					erase;
+					alert;
+				Page4_Path_2:
+					c "Page 4:\n\n";
+					LightCyan;
+					c "You tell Evan you'll catch up with him later and head home. In a few minutes, you're walking up to your front door. Inside, you shrug out of your jacket. It drops to the floor in the middle of the hall. You head for the fridge. You want something to eat before you figure out the Camperdown Maple.\n";
+					c "Now you can think. And it takes no time for you to figure out what to do first. You call the state environmental protection angency\n.";
+					c "You quickly realize they can't help. The woman who answers the phone has a scratchy, gravelly voice. She sounds as if she has spent too many years breathing environmental waste. The first question she asks is if the Camperdown Maple is a toxic-waste dump.\n";
+					c "You flip through the phone book and find the number for Green America. You remember the name from some school presentation. You dial.\n";
+					c "\"Save the planet, plant a tree,\" says the man who answers the phone. \"May I help you a tree?\"\n";
+						c "\nTurn page(f)\n";
+					if (page == 'f' || page == 'F')
+					{
+						ConsoleClear;
+						erase;
+						alert;
+					Page5_Path_2:
+						c "Page 5:\n\n";
+						LightCyan;
+						c "\"Uh yeah,\" you say. \"I was wondering if you people could help me.\"\n";
+						c "\"Sure, my name is Roger Kelly,\" the voice says cheerfully.\n";
+						c "You explain what's happened to the Camperdown Maple.\n";
+						c "Mr Kelly is outraged. He wants to stage a protest in front of the toy store over Thanksgiving weekend as well as circulate a petition.\n";
+						c "\"I suggest you go to your town clerk's office and get a copy of the building permit to see how they got permission to construct their store around the tree.\n";
+						c "You gulp. You've never been to the town hall before.\n";
+						White;
+						c "\nAre you determined to protest (protest)? Are you having second thoughts (nevermind)?\n";
+						cin >> GameChoice;
+						if (GameChoice == "protest" || GameChoice == "Protest")
+						{
+							ConsoleClear;
+							erase;
+							alert;
+						Page6_Path_2_1:
+							c "Page 6:\n\n";
+							LightCyan;
+							c "The next day after school you grab Evan and make him accompany you to town hall.\n";
+							c "\"But I like the toy store,\" Evan protests.\n";
+							c "You give him a withering look.\n";
+							c "He raises his hands. \"Ok, you win,\" he says.\n";
+							c "The town clerk is a prim, meticulous, balding man. He wears a plaid shirt and jeans. You expected him to be dressed in a suit and tie, and you're relieved he's not. Suits and ties make you nervous.\n";
+							c "He smiles from behind a long counter that divides the room in half. \"What can I do for you?\"\n";
+							c "Your side of the counter is completely empty. No chairs. No tables. Nothing. His side, however, is cluttered like an old attic. Stacks of papers and file cabinets are packed in every available space.\n";
+							c "Nervously you approach the counter.\n";
+							c "You read his name tag: John Free. \"Yes. I'd like to get a copy of the building permit for the new toy store.\"\n";
+							c "\"New toy store?\" he asks, puzzles. \"What new toy store?\"\n";
+							c "\nTurn page(f)\n";
+							cin >> page;
+							if (page == 'f' || page == 'F')
+							{
+								ConsoleClear;
+								erase;
+								alert;
+								Page7_Path_2_1:
+									c "Page 7:\n\n";
+								LightCyan;
+								c "\"The one that opened yesterday,\" you tell him.\n";
+								c "The clerk shakes his head. \"No new businesses have opened since July.\" He goes back to reading the lunch menu for the local coffee shop.\n";
+								c "You glance at Evan. Something smells fishy. You both quickly back out of the clerk's office. \"We've got to stop these people,\" you say, as the two of you stand on the sidewalk in front of town hall.\n";
+								c "\"Why?\" Evan replies. \"It's a pretty cool store.\n";
+								c "Why not enjoy it?\"\n";
+								c "\"You're so lazy,\" you reply. \"Don't you have any sense of civic responsibility?\"\n";
+								c "\"The only responsibility I feel is toward my stomach,\" Evan says, rubbing it gleefully. He leads you own the street to Misha's Candy Store.\n";
+								c "\"Sodas on me,\" you say, hoping you can maybe bribe Evan into helping you. Then you realize you're broke. Embarrassed, you try diversionary tactics. \"On second thought, let's check out the toy store one last time and see if we can sniff out anything.\"\n";
+								White;
+								c "\nTurn page(f)\n";
+								cin >> page;
+								if (page == 'f' || page == 'F')
+								{
+									ConsoleClear;
+									erase;
+									alert;
+									Page8_Path_2_1:
+										c "Page 8:\n\n";
+									LightCyan;
+									c "\"Great idea!\" Evan says enthusiastically. \"I really want to check the place out one more time before you get it shut down and ruin everything.\n";
+									c "\"But I'm really thirsty,\" he adds. \"Let's get sodas first.\"\n";
+									c "\"I'm broke,\" you say sheepishly. You pull out your pockets for emphasis.\n";
+									c "Evan waves you away. \"No sweat. I'm buying.\" He slaps a twenty-dollar bill on the counter.\n";
+									c "Your eyes bug out. You've never seen Evan with this kind money. \"Where'd you get that?\" you gasp.\n";
+									c "\"Early Christmas present from my uncle Melvin.\" Evan grabs a licorice as well.\n";
+									c "You look at Evan suspiciously. He doesn't have an uncle called Melvin. Why is he lying? Should you confront him on it? Or should you let it go and order a soda? Is it really that big a deal?\n";
+									White;
+									c "Do you call him (confront)? Do you let it slide (overlook)?\n";
+									c "\nGo back a page(b)\n";
+									cin>>GameChoice;
+									if (GameChoice == "b" || GameChoice == "B")
+									{
+									    ConsoleClear;
+									    erase;
+									    alert;
+									    goto Page7_Path_2_1;
+									}
+									if (GameChoice == "Confront" || GameChoice == "confront")
+									{
+									    ConsoleClear;
+									    erase;
+									    alert;
+									    Page9_Path_2_1_1:
+										c "Page 9:\n\n";
+									    LightCyan;
+									    c "\"You don't have an uncle Melvin,\" you tell him.\n";
+									    c "Evan shrugs. \"Yeah, I do. You just never met him. Hey,\" he says, switching gears \"You want to head over to my house and play some video games?\"\n";
+									    c "\" Nah, I think I'm going home,\" you answer, really disappointed that he's lying to you.\n";
+									    c "\"But I just got Wally Wimp,\" he says pleadingly.\n";
+									    c "This stops you. Wally Wimp is a cool new video game. A strong little troll, Wally Wimp, must climb a huge mountain to get a cache of gold. Along the way, snowstorms, avalanches, rock slides, herds of mountain goats, and evil elves try to stop him.\n";
+									    c "\"When did you get that?\" you ask suspiciously. He didn't have Wally Wimp yesterday. Evan ignored your question. \"I've made it to level thirteen already,\" he brags.\n";
+									    c "\"Level thirteen?\" you reply with excitement. You can't stand the idea of Evan being better than you at something. You always beat him. That's what makes him such as terrific friend. He doesn't care if he loses. \"Okay, let's go.\"\n";
+									    c "The two of you head for Evan's house.\n";
+									    c "Evan lets you go first on Wally Wimp while he makes a phone call. He returns about fifteen minutes later.\n";
+									    c "\"Who'd you call?\" you ask.\n";
+									    c "Evan hesitates, as if he doesn't want to say. \"Just the toy store. I wanted to know when they close. I thought I'd get my dad to come over and check it out with me after dinner.\"\n";
+									    c "\"Your dad hates shopping,\" you remind Evan.\n";
+									    c "Evan comes up close behind you to look over your shoulder. \"Maybe.\"\n";
+									    c "\"Watch this,\" you say, as you make Wally outmaneuver a dozen charging mountain goats. But Wally Wimp tumbles off the side of the mountain. He's falling...falling...";
+									    Blue;
+									    c "CRACK!";
+									    LightCyan;
+									    c " Suddenly you're falling.\n";
+									    White;
+									    c "\nTurn page(f)\n";
+								        cin >> page;
+								        if (page == 'f' || page == 'F')
+								        {
+								           ConsoleClear;
+								           erase;
+								           alert;
+								           Page10_Path_2_1_1:
+										   c "Page 10:\n\n";
+									       LightCyan;
+									       c "Evan has just whacked you in the head with a crystal candlestick!\n";
+									       c "Bright violet stars, sizzling pink circles, and a weird collection of colors and shapes flash before your eyes like a crazy kaleidoscope. You ears are ringing, and our head feels as if someone has been pounding on it with a sledgehammer. Without opening your eyes, you try to stand up. But you're too dizzy.\n";
+									       c "Hands lift you and carry you to a truck or van. You can't tell which. Groggily you open your eyes. You're surrounded by elf like people from the toy castle.\n";
+									       Blue;
+									       c "CRACK!";
+									       c " Something hard hits you again.\n";
+									       c "You pass out.\n";
+									       White;
+									       c "\nTurn page(f)\n";
+								           c "\nGo back a page(b)\n";
+								           cin >> page;
+								           if (page == 'b' || page == 'B')
+								           {
+								               ConsoleClear;
+								               erase;
+								               alert;
+								               goto Page9_Path_2_1_1;
+								           }
+								           if (page == 'f' || page == 'F')
+								           {
+								               ConsoleClear;
+								               erase;
+								               alert;
+								               Page11_Path_2_1_1:
+										       c "Page 11:\n\n";
+									           LightCyan;
+									           c "You wake up hours later. Your head really hurts. The last thing you remember is falling first - First, Wally if falling off the mountain, then you are falling. Were you climbing the mountain, or was Wally? You open your eyes to see where to begin climbing the mountain again.\n";
+									           c "\"Don't move,\" commands a faraway voice.\n";
+									           c "You look around to see where you are. It's not a mountain. You're not a cartoon troll.\n";
+									           c "\"Sit still,\" says a warm, friendly voice. It sounds like one of the elves from the toy castle. This doesn't make sense, but then Evan conking you on the head defies all logic. He's your best friend. Why would he hurt you?\n";
+									           c "You're in a dimly lit room that's crammed with all kinds of stuffed animals. And the person leaning over you is big and round and fluffy. It's a stuffed toy!\n";
+									           c "You blink. It's not a stuffed toy. It's a little man dressed in red.\n";
+									           White;
+									           c "\nTurn page(f)\n";
+								               c "\nGo back a page(b)\n";
+								               cin >> page;
+								               if (page == 'f' || page == 'F')
+								               {
+								                   ConsoleClear;
+								                   erase;
+								                   alert;
+								                   Page12_Path_2_1_1:
+										           c "Page 12:\n\n";
+									               LightCyan;
+									               c "Santa Claus! No, you tell yourself, you're hallucinating. First you thought you were in a video game. Now you think you're at the North Pole. But the old man has ruddy cheeks, a long white beard, and a twinkle in his eye!\n";
+									               c "\"There, there,\" he says. \"Don't worry. We'll get you out of this.\"\n";
+									               c "\"Get-get out of what?\" you stammer.\n";
+									               c "The jolly-looking man glances around the room. \"Out of here. Out of this storage room in the evil elves' caslte.\"\n";
+									               c "\"Elves' castle!\" you exclaim. \"You must be nuts!\"\n";
+									               c "\"You're mistaken,\" the old man answer.\n";
+									               c "\"I'm not nuts, I'm Santa Claus!\"\n";
+									               c "You grab your hair and try to pull it out.\n";
+									               c "\"Where's Evan?\" you yell.\n";
+									               c "\"Calm down,\" Santa says soothingly.\n";
+									               c "You scramble on your hands and knees to the other side of the room. \"Get away from me!\" you scream. \"You're not real. You're...\" Santa comes over and pinches your cheek hard.\n";
+									               c "\"Ouch!\" you tell. That pinch hurt. He is real. \"What is this place?\"\n";
+									               White;
+									               c "\nTurn page(f)\n";
+								                   c "\nGo back a page(b)\n";
+								                   cin >> page;
+								                   if (page == 'b' || page == 'B')
+								                   {
+								                       ConsoleClear;
+								                       erase;
+								                       alert;
+								                       goto Page11_Path_2_1_1;
+								                   }
+								                   if (page == 'f' || page == 'F')
+								                   {
+								                       ConsoleClear;
+								                       erase;
+								                       alert;
+								                       Page13_Path_2_1_1:
+										               c "Page 13:\n\n";
+									                   LightCyan;
+									                   c "\"We're being held hostage by a group if rogue elves that I cast out of the North Pole when they tried to take over,\" Santa tells you.\n";
+									                   c "\"You've got to be kidding,\" you protest. \"I was just playing a video game at my friend's house.\"\n";
+									                   c "A serious scowl crosses Santa's face. \"Does your friend have a shaggy brown hair?\"\n";
+									                   c "You nod.\n";
+									                   c "\"Is he about this tall?\" Santa asks, holding his hand up to the same height as Evan. \"And does he wear a torn jean jacket with a patch that says 'Munch On' stitched to the right shoulder?\"\n";
+									                   c "\"That's Evan!\" you shout.\n";
+									                   c "Santa shakes his head sadly. \"He was with the elves that brought you here. They've brainwashed him.\"\n";
+									                   c "\"This can't be happening,\" you cry as you jump and run to the door. \"Get me out of here!\"\n";
+									                   c "Santa sinks into a pile of teddy bears. \"It's no use. They're not to let you out. I've been in here for at least a week.\"\n";
+									                   White;
+									                   c "\nTurn page(f)\n";
+								                       c "\nGo back a page(b)\n";
+								                       cin >> page;
+								                       if (page == 'f' || page == 'F')
+								                       {
+								                           ConsoleClear;
+								                           erase;
+								                           alert;
+								                           Page14_Path_2_1_1:
+										                   c "Page 14:\n\n";
+									                       LightCyan;
+									                       c "\"What can we do?\" you ask.\n";
+									                       c "\"Wait it out,\" Santa says. \"At some point my good elves will figure out where I am and come to my rescue. I just hope that happens before Christmas. I hate to think of all the kids who depend on me not getting any presents.\"\n";
+									                       c "You smirk. \"You can't be Santa Claus.\"\n";
+									                       c "\"But I am.\" He tells you your name and recited the items on your Christmas list over the past few years. Then he mentions the broken window a few weeks back.\n";
+									                       c "\"Yeah, right,\" you answer, still a bit skeptical. You fall into a pile of cuddly rabbits and decide to let the olf man have his fantasy.\n";
+									                       c "Suddenly a cacophony of noise rises just outside the room.\n";
+									                       c "Someone bangs on the door. You hear a faint voice. \"Santa? Santa? Are you in there?\"\n";
+									                       c "At the same time you hear shouting and noises that sound like bullets being fired.\n";
+									                       c "Santa perks up. \"Yes! Is that you, Elsnor?\"\n";
+									                       c "\"Stand back, Santa!\" the voice shouts.\n";
+									                       Blue;
+									                       c "BOOM!";
+									                       LightCyan;
+									                       c " The foor splinters open, clearing the way for the most amazing sight you've ever seen in your life!\n";
+									                       White;
+									                       c "\nTurn page(f)\n";
+								                           c "\nGo back a page(b)\n";
+								                           cin >> page;
+								                           if (page == 'b' || page == 'B')
+								                           {
+								                               ConsoleClear;
+								                               erase;
+								                               alert;
+								                               goto Page13_Path_2_1_1;
+								                           }
+								                           if (page == 'f' || page == 'F')
+								                           {
+								                               ConsoleClear;
+								                               erase;
+								                               alert;
+								                               Page15_Path_2_1_1:
+										                       c "Page 15:\n\n";
+									                           LightCyan;
+									                           c "Outside the door stand a dozen little men and women dressed in green outfits with red trim. On their feet are shoes that curl up. Some of the men and women are bleeding. All of them carry machine guns.\n";
+									                           c "Santa turns to his elves. \"Are Donner and Vixen and Prancer and Dancer and the rest of the reindeer outside?\"\n";
+									                           c "\"Even Rudolph!\" the elf in front answers. \"But we're going to have to blast our way out of here.\"\n";
+									                           c "\"We were able to fight our way in, but the evil elves have regrouped,\" adds a short, rosy cheeked woman.\n";
+									                           c "\"Look!\" another elf shouts.\n";
+									                           c "Just then a dozen mechanical clowns smash through the wall, firing squirt guns.\n";
+									                           c "\"That's not water!\" Santa screams.\n";
+									                           c "You and Santa's helpers retreat through the broken door as Santa hurls stuffed animals at the clowns.\n";
+									                           c "The room fills with smoke as the stuffed animals that were soaked by the water guns burst into flames.\n";
+									                           White;
+									                           c "\nTurn page(f)\n";
+								                               c "\nGo back a page(b)\n";
+								                               cin >> page;
+								                               if (page == 'f' || page == 'F')
+								                               {
+								                                   ConsoleClear;
+								                                   erase;
+								                                   alert;
+								                                   Page16_Path_2_1_1:
+										                           c "Page 16:\n\n";
+									                               LightCyan;
+									                               c "You duck out through the door with Santa right behind you. The elves in front blast their guns furiously as evil elves appear.\n";
+									                               c "You stumble and fall. Luckily Santa lifts you by the seat of your pants and drags you through a window.\n";
+									                               c "Outside, Santa's sleigh is waiting. Everyone leaps in, and the reindeer take off.\n";
+									                               c "\"That was close,\" you gasp. You wipe your brow with your hand and see blood smeared across it. Behind you the toy castle and the Camperdown Maple are engulfed in flames.\n";
+									                               c "The next day you wake up and check your forehead in the mirror. There's no cut. You run to the toy store. It's not there! In fact, the Camperdown Maple looks the way it used to. There's no sign of anu building ever having been built around it. And none of its branches are burned.\n";
+									                               c "Obviously, this doesn't make any sense. But do you really want to try to explain this to someone? They're going to think you're nuts. On the other hand, you could tell Evan. He might not think you're crazy.\n";
+									                               White;
+									                               c "Do you tell Evan (tell)? Do you keep quiet (quiet)?\n";
+									                               c "\nGo back a page(b)\n";
+									                               cin>>GameChoice;
+									                               if (GameChoice == "tell" || GameChoice == "Tell")
+									                               {
+									                                   ConsoleClear;
+									                                   erase;
+									                                   alert;
+									                                   Page17_Path_2_1_1_1:
+										                               c "Page 17:\n\n";
+									                                   LightCyan;
+									                                   c "You approach Evan after school the next day, but he seems strangely distracted. When you mention the Wally Wimp game, he stares at you as if you're crazy. \"What Wally Wimp game?\" he asks.\n";
+									                                   c "You decide not to pursue the matter. Over the next few weeks, you see Evan less and less. He always seems to be preoccupied with something and never has time to hang out after school.\n";
+									                                   c "The week before Christmas, he stops coming to school altogether. You're worried. He is your best friend, after all, even if he has been acting weird lately. You decide to go over to his house after school. When you get there, the shades are all drawn.\n";
+									                                   c "You ring the doorbell.\n";
+									                                   c "After about a minute, you ring it again and wait. And wait. And wait. Nobody answers.\n";
+									                                   c "You decide to check the backyard. Maybe Evan is outside playing with his dog. Bubba, and can't hear the doorbell. You walk around the house and climb over the chain-link fence that surrounds the backyard.\n";
+									                                   White;
+									                                   c "\nTurn page(f)\n";
+									                                   cin >> page;
+								                                       if (page == 'f' || page == 'F')
+								                                       {
+								                                          ConsoleClear;
+								                                          erase;
+								                                          alert;
+								                                          Page18_Path_2_1_1_1:
+										                                  c "Page 18:\n\n";
+									                                      LightCyan;
+									                                      c "The yard is empty. That's weird. The Tomchins always let Bubba out into the backyard when they leave the house.\n";
+									                                      c "You walk up the steps to the deck and peer through the sliding glass doors that open into the TV room. You see movement in the shadows.\n";
+									                                      Blue;
+									                                      c "Bang! Bang!";
+									                                      LightCyan;
+									                                      c " You hit your first against the glass, hoping to get the person's attention.\n";
+									                                      c "\"Evan!\" you call.\n";
+									                                      c "No one answers.\n";
+									                                      c "You try the door, and it slides open. You step into the room. It's eerily quiet. Almost too quiet. You can't even hear the hum of the fridge in the kitchen. Cautiously you tiptoe through the house.\n";
+									                                      c "\"Evan?\" you whisper. The house is still too quiet. You walk down the hall to check upstairs, but you don't get as far as the stairs.\n";
+									                                      c "A dozen elves leap over the banister and pin you to the ground! \"If you're quiet, we won't kill you.\" a fat eld barks. \"We're just waiting until after Christmas. Then it'll be safe enough to escape without Santa tracking us down.\"\n";
+									                                      c "You nod.\n";
+									                                      White;
+									                                      c "\nTurn page(f)\n";
+								                                          c "\nGo back a page(b)\n";
+								                                          cin >> page;
+								                                          if (page == 'b' || page == 'B')
+								                                          {
+								                                              ConsoleClear;
+								                                              erase;
+								                                              alert;
+								                                              goto Page17_Path_2_1_1_1;
+								                                          }
+								                                          if (page == 'f' || page == 'F')
+								                                          {
+								                                              ConsoleClear;
+								                                              erase;
+								                                              alert;
+								                                              Page19_Path_2_1_1_1:
+										                                      c "Page 19:\n\n";
+									                                          LightCyan;
+									                                          c "The elves quickly tie you up and lock you in a closet. You sit cramped in the dark for what seems like hours. Over the next few days you think you're going to go insane from hunger and thirst, but somehow you survive.\n";
+									                                          c "The police find you the day after Christmas. You try to explain that you were kidnapped by elves, but they don't believe you. They're more concerned with trying to solve the disappearance of Evan and his entire family.\n";
+									                                          c "Unfortunately no one solves the mystery, and no one will believe what you have to say about it. No matter how persistent you are.\n\n";
+									                                          End12:
+									                                          LightRed;
+
+													c "                          _________            ___       ___                         \n";
+													c "                              |       |   |   |         |      |\\   |   |\\         \n";
+													c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+													c "                              |       |   |   |         |      |  \\ |   | /         \n";
+													c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+													White;
+													c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+													c "(type back, menu, or end)\n";
+													l = 1;
+													cin >> GameEndChoice;
+													if (GameEndChoice == "back" || GameEndChoice == "Back")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Page16_Path_2_1_1;
+													}
+													if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Menu;
+
+													}
+													if (GameEndChoice == "end" || "End")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														LightRed;
+														c "See you soon...";
+														return 0;
+
+													}
+								                                          }
+								                                       }
+									                               }
+									                               if (GameChoice == "quiet" || GameChoice == "Quiet")
+									                               {
+									                                   ConsoleClear;
+									                                   erase;
+									                                   alert;
+									                                   Page17_Path_2_1_1_2:
+										                               c "Page 17:\n\n";
+									                                   LightCyan;
+									                                   c "You decide not to say anything. It was probably just a crazy dream, anyway. Several weeks later, on Christmas morning, a beautifully wrapped box appears under the tree. And inside is your very own copy of Wally Wimp!\n";
+									                                   c "You turn to your mom and dad. \"Thanks!\"\n";
+									                                   c "\"For what?\" your parents respond.\n";
+									                                   c "\"This game,\" you reply. \"You said they were sold out at the store.\"\n";
+									                                   c "Your dad shakes his head. \"We didn't buy any game.\" You dig through the wrapping paper. The tag reads:\n\n";
+									                                   Yellow;
+									                                   c "Thanks For All Your Help!\n";
+									                                   c "Merry Christmas, Santa.\n";
+									                                   LightCyan;
+									                                   c "Your eyes bug out. Was it true? Did rogue elves really kidnap you and Santa? As you're thinking about this, your dad gives your mom a wink. She winks back. But you don't see any of this.\n";
+									                                   c "You can't wait to run over to Evan's house and tell him. But wait. If you were really kidnapped, was Evan really hypnotized by the evil elves?\n\n";
+									                                   End11:
+									                                   LightRed;
+
+													c "                          _________            ___       ___                         \n";
+													c "                              |       |   |   |         |      |\\   |   |\\         \n";
+													c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+													c "                              |       |   |   |         |      |  \\ |   | /         \n";
+													c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+													White;
+													c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+													c "(type back, menu, or end)\n";
+													k = 1;
+													cin >> GameEndChoice;
+													if (GameEndChoice == "back" || GameEndChoice == "Back")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Page16_Path_2_1_1;
+													}
+													if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Menu;
+
+													}
+													if (GameEndChoice == "end" || "End")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														LightRed;
+														c "See you soon...";
+														return 0;
+
+													}
+									                               }
+									                               if (GameChoice == "b" || GameChoice == "B")
+									                               {
+									                                   ConsoleClear;
+									                                   erase;
+									                                   alert;
+									                                   goto Page15_Path_2_1_1;
+									                               }
+								                               }
+								                               if (page == 'b' || page == 'B')
+								                               {
+								                                   ConsoleClear;
+								                                   erase;
+								                                   alert;
+								                                   goto Page14_Path_2_1_1;
+								                               }
+								                           }
+								                       }
+								                       if (page == 'b' || page == 'B')
+								                       {
+								                           ConsoleClear;
+								                           erase;
+								                           alert;
+								                           goto Page12_Path_2_1_1;
+								                       }
+								                   }
+								               }
+								               if (page == 'b' || page == 'B')
+								               {
+								                   ConsoleClear;
+								                   erase;
+								                   alert;
+								                   goto Page10_Path_2_1_1;
+								               }
+								           }
+								        }
+									}
+									if (GameChoice == "overlook" || GameChoice == "Overlook")
+									{
+									    ConsoleClear;
+									    erase;
+									    alert;
+									    Page9_Path_2_1_2:
+										c "Page 9:\n\n";
+									    LightCyan;
+									    c "Even though you're surprised that Evan would actually lie, you don't want to confront him. Instead, you try to enjoy your soda, since this is the first time Evan has ever opened his wallet and treated. Unfortunately, the fact that Evan is lying to you ruins the experience. You're disappointed in him and decide to go home. You don't want to hang out with him if he can't tell the truth.\n";
+									    c "\"I've got homework to do,\" you say, as an excuse.\n";
+									    c "\"You can't put it off until after supper?\"\n";
+									    c "Evan asks. \"What about the protest?\"\n";
+									    c "We can do it tomorrow,\" you answer. \"I think we can do it tomorrow,\" you answer. \"I think we can get Mrs. Loggia to help us organize if after school. She's always talking about the environment in class.\n";
+									    c "A worried look crosses Evan's face. He scowls. He's just upset that you're ditching him.\n";
+									    c "\"See ya tomorrow,\" he mumbles in a distracted way.\n";
+									    White;
+									    c "\nTurn page(f)\n";
+								        cin >> page;
+								        if (page == 'f' || page == 'F')
+								        {
+								            ConsoleClear;
+								            erase;
+								            alert;
+								            Page10_Path_2_1_2:
+										    c "Page 10:\n\n";
+								        	LightCyan;
+								        	c "You crinkle your brow and give him a sideways glance. You wonder what he's thinking, but you're still too upset to find out. Instead you wave and say, \"Yeah, tomorrow.\" You walk toward home.\n";
+								        	c "When you get home, you head for your room and attack the pile of homework Mrs. Loggia has loaded you down with. Normally homework is the absolute last thing you do during the day, but right now it seems better than thinking about Evan lying to you.\n";
+								        	c "You spend the rest of the evening in your room and only come out for a quick supper. Hours after you've gone to bed, a rock is thrown through your bedroom window. Shards of glass scatter across the floor. A chil breeze whips into your room.\n";
+								        	 c "Startled, you get back up and look out the window.\n";
+								        	 White;
+								        	 c "\nTurn page(f)\n";
+								        	 c "\nGo back a page(b)\n";
+								             cin >> page;
+								             if (page == 'b' || page == 'B')
+								             {
+								                 ConsoleClear;
+								                 erase;
+								                 alert;
+								                 goto Page9_Path_2_1_2;
+								             }
+								             if (page == 'f' || page == 'F')
+								             {
+								                 ConsoleClear;
+								                 erase;
+								                 alert;
+								                 Page11_Path_2_1_2:
+								                 c "Page 11:\n\n";
+								        	     LightCyan;
+								        	     c "A van is idling on the street in front of your house. The person in the passenger seat looks vaguely like Evan, but you know it can't be. You grab the towel you left on the floor after your shower this morning and shove it into the hole in the broken window.\n";
+								        	     c "\"What kind of loser throws rocks at people's windows?\" you mutter. Still half asleep, you climb back in bed and pull the covers over your head.\n";
+								        	     c "At the same time, a ladder is gently propped up against your window. A small, furry teddy bear pushes the towel onto the floor. He climbs through your window and waves for the others behind him to follow. About thirty bears gather quietly at the end of your bed. Without making a sound, they crawl onto your blanket.\n";
+								        	      c "You stir as your blanket slips halfway off.\n";
+								        	      c "The cute teddy bears freeze. You snuggle into your bed.\n";
+								        	      White;
+								        	      c "\nTurn page(f)\n";
+								        	      cin>>page;
+								        	      if (page == 'f' || page == 'F')
+								        	      {
+								        	          ConsoleClear;
+								        	          erase;
+								        	          alert;
+								        	          Page12_Path_2_1_2:
+								                      c "Page 12:\n\n";
+								        	          LightCyan;
+								        	          c "Once you fall deeper into sleep, the teddy bears surround your body and pummel you with their soft fists. While your skin doesn't bruise, your internal organs are pounded to a pulp. Two of the bears grab a pillow and press it against your face. You die quietly in your sleep.\n";
+								        	          c "The bears slip through the window and return to the van idling out front. Evan is standing by the van's open back door, waving the bears in. When the last bear climbs up, he pulls the door closed and hops back into the passenger seat.\n";
+								        	          c "The van heads across town to the town clerk's home. The same thing happens to him. In the following weeks, the police can't find any leads in their investigation of these and similar crimes. There are no fingerprints at any of the crime scenes, and there is no evidence...except for little tufts of teddy bear fur around the bodies.\n\n";
+								        	          End10:
+								        	          LightRed;
+
+													c "                          _________            ___       ___                         \n";
+													c "                              |       |   |   |         |      |\\   |   |\\         \n";
+													c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+													c "                              |       |   |   |         |      |  \\ |   | /         \n";
+													c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+													White;
+													c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+													c "(type back, menu, or end)\n";
+													j = 1;
+													cin >> GameEndChoice;
+													if (GameEndChoice == "back" || GameEndChoice == "Back")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Page8_Path_2_1;
+													}
+													if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Menu;
+
+													}
+													if (GameEndChoice == "end" || "End")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														LightRed;
+														c "See you soon...";
+														return 0;
+
+													}
+								        	      }
+								             }
+								        }
+									}
+
+								}
+							}
+						}
+						if (GameChoice == "nevermind" || GameChoice == "Nevermind" || GameChoice == "Nvm" || GameChoice == "nvm")
+						{
+							ConsoleClear;
+							erase;
+							alert;
+						Page6_Path_2_2:
+							c "Page 6:\n\n";
+							LightCyan;
+							c "You decide to not start any trouble at town hall. The next day at school you run into Evan after English class.\n";
+							c "\"Wow!\" Evan yells across the hallway.\n";
+							c "\"That's all I have to say.\"\n";
+							c "You stare at him, confused.\n";
+							c "\"Wow!\" Evan repeats.\n";
+							c "\"Wow, what?\" you ask, getting a little impatient.\n";
+							c "\"Wow, the new toy shop,\" Evan answers. \"That new toy store is awesome. It has the coolest stuff I've ever seen. There's one thing in there that I've gotta have.\"\n";
+							c "\"What?\" you ask excitedly, forgetting your earlier reservations.\n";
+							c "Evan spreads his arms in the crowded hallway and smacks a kid in the face.\n";
+							c "\"Hey!\" the kid yells.\n";
+							c "\"Sorry,\" Evan apologizes. \"Anyway, it's this huge virtual-reality game that's actually a complete suit. It makes you feel like you're really there!\"\n";
+							White;
+							c "\nTurn page(f)\n";
+							cin >> page;
+							if (page == 'f' || page == 'F')
+							{
+								ConsoleClear;
+								erase;
+								alert;
+							Page7_Path_2_2:
+								c "Page 7:\n\n";
+								LightCyan;
+								c "\"Cool!\" You bounce on the balls of your feet.\n";
+								c "You can't wait to try it out.\n";
+								c "\"And the best part is it's only fifty bucks!\" Evan says.\n";
+								c "You whistle. No video game is that cheap. Especially not one you've been begging your parent for: Wally Wimp. No store in town has it. It's been sold out for months.\n";
+								c "You and Evan agree to meet after school and head over to the toy shop.\n";
+								c "Toy monkeys and clowns move back and forth across tightropes strung underneath the ceiling. Kids play with pogo sticks, trains, dolls, and dozens of games and toys you don't recognize. A giant teddy bear is handing out candy canes while cute elf like people dressed in green outfits with red trim scurry about assisting kids and answering questions.\n";
+								c "Evan pulls you through a door into a dimly lit room. Laser lights shoot back and forth. All sorts of high-tech toys blink and make weird noises. The place looks like a scene from a space-adventure movie.\n";
+								c "\"Over here!\" Evan calls. He's pulling on a strange-looking space suit.\n";
+								c "\"Watch this!\" Evan says, as he pulls down the goggles and pushes the start button. Suddenly he drops to a crouch. \"I'm in a space cruiser on a mission to save the galaxy. My first objective is to destroy the Alpha Romeo space outpost where a group of rogue Federation elite corps has its base.\n";
+								c "You jump back as Evan spins, waving his hands wildly in the air. \"I got one!\" he screams. He ducks and turns to the left. \"Four more bearing right down on me!\"\n";
+								Blue;
+								c "BLAM! ";
+								LightCyan;
+								c "The suit emits an explosive sound.\n";
+								c "\"I'm dead\" Evan screams. He falls to the floor.\n";
+								White;
+								c "\nTurn page(f)\n";
+								c "\nGo back a page(b)\n";
+								cin >> page;
+								if (page == 'b' || page == 'B')
+								{
+									ConsoleClear;
+									erase;
+									alert;
+									goto Page6_Path_2_2;
+								}
+								if (page == 'f' || page == 'F')
+								{
+									ConsoleClear;
+									erase;
+									alert;
+								Page8_Path_2_2:
+									c "Page 8:\n\n";
+									LightCyan;
+									c "\"Just kidding.\" Evan laughs as he pulls off the goggles. He hands the goggles to you\n";
+									c "\"Want to try " << FirstName << "?\"\n";
+									c "\'I'm not sure,\" you say haltingly.\n";
+									c "\"I've got to have this,\" Evan says, taking the suit off. \"It's the coolest game I've ever played. And it's only fifty bucks. All I have to do is figure out how to get fifty bucks.\n";
+									c "You glance across the room at the video game section. \"I think I'll stick to regular video games.\"\n";
+									c "You go over to them.\n";
+									c "\"Hey!\" Evan calls. \'Are you sure?\"\n";
+									c "You nod. To your amazement, you spot the Wally Wimp game. Cool! \"Evan! They've got Wally Wimp. I can't believe they've got it !\"\n";
+									c "\"Great!\" Evan joins you. \"But you gotta try the virtual-reality suit.\" He pushes you back across the room and then returns to the video games. You pick up he suit.\n";
+									c "Then you spot one of the toy shop's workers standing by the door. Hoping that Evan doesn't see you, you hurry to the worker. \"Excuse me.\"\n";
+									c "A little woman with rosy cheeks and pointy ears looks up at you. \"Yes?\"\n";
+									c "You point to the virtual-reality suit. \"How much is that?\"\n";
+									c "\"Fifty dollars,\" she answers cheerfully as the two of you walk to it.\n";
+									c "\"Hmmm,\" you say.\n";
+									c "You dig into your pocket and fish out a wad of bills and change: $13.58. It's this week's allowance and lunch money. You figure you can go without school lunch for a month. You'll just eat a big breakfast. \"Can I make a down payment and give you the rest before Christmas?\"\n";
+									c "She frowns. \"Well, I'll need to check with the manager,\" he says. She walks over to a courtesy phone by the door and dials a number.\n";
+									White;
+									c "\nTurn page(f)\n";
+									c "\nGo back a page(b)\n";
+									cin >> page;
+									if (page == 'b' || page == 'B')
+									{
+										ConsoleClear;
+										erase;
+										alert;
+										goto Page7_Path_2_2;
+									}
+									if (page == 'f' || page == 'F')
+									{
+										ConsoleClear;
+										erase;
+										alert;
+									Page9_Path_2_2:
+										c "Page 9:\n\n";
+										LightCyan;
+										c "You hold up the virtual-reality suit and check it over. You desperately want to get the suit for Evan. He's your best friend, and you know it will knock his socks off. The thrill of making his Christmas dream come true outweighs any sense of sacrifice on your part. Besides, you hate school lunch.\n";
+										c "The tiny saleswoman returns. \"Good news! You can pay in installments or you can spend four afternoons stocking toys in the storeroom to pay off the balance.\n";
+										c "This sounds really cool. You glance over at Evan. He's involved in a passionate conversation with another sales elf. You have to make up your mind fast. It would be neat to actually work in a toy store. But at the same time, can you pull it off without Evan catching on? The two of you hang out together after school every day.\n";
+										c "You vow to keep it a secret. \"You got a deal!\" A wide smile spreads across your face. Evan will never be able to top this, you think.\n";
+										c "The next day you arrive at the toy shop castle after school. You had a surprisingly easy time shaking Evan. He didn't want to hang out. You thank your lucky stars.\n";
+										c "\"Excuse me,\" you say to the first little guy dressed in green that you see. \"I'm here for the stockroom position.\n";
+										c "He smiles. \"Yes, of course! Follow me.\"\n";
+										c "He leads you through a door that's disguised as a bookcase into a storage room. Inside are stacks of awesome toys and games. A dozen short people dressed in green are at work stacking toys and putting them in boxes.\n";
+										c "You wonder where these people come from. They're all short and look alike. You turn to your guide. \"Where are you from?\" Are you all related?\"\n";
+										c "He laughs and motions you over to a large cart loaded with boxes. \"If you stay here long enough, you might just find out.\" Then he cups his hands over his mouth. \"But I'd advise you not to,\" he whispers.\n";
+										White;
+										c "\nTurn page(f)\n";
+										c "\nGo back a page(b)\n";
+										cin >> page;
+										if (page == 'b' || page == 'B')
+										{
+											ConsoleClear;
+											erase;
+											alert;
+											goto Page8_Path_2_2;
+										}
+										if (page == 'f' || page == 'F')
+										{
+											ConsoleClear;
+											erase;
+											alert;
+										Page10_Path_2_2:
+											c "Page 10:\n\n";
+											LightCyan;
+											c "\"What?\" You give him a puzzled look, but he just waves you over to the cart.\n";
+											c "Bring these toys to the loading dock,\" he says. \"It's down the hall.\" He points to a door at the other end of the room.\n";
+											c "You nod and grab the cart. You push it down the hall, but you can't find the door to the loading dock. There are no signs on the doors along the halls.\n";
+											c "What should you do?";
+											White;
+											c "Do you go back to the storage room (storage)? Do you keep going (move)?";
+											c "\nGo back a page(b)\n";
+											cin >> GameChoice;
+											if (GameChoice == "b" || GameChoice == "B")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+												goto Page9_Path_2_2;
+											}
+											if (GameChoice == "move" || GameChoice == "Move")
+											{
+												c "You pick a door and knock. No anwer.\n";
+												c "You try another door. Again, no answer.\n";
+												c "You try a third door. Still no answer. This time, however, you try the handle. It's unlocked. \"Hello?\" you call as you slowly open the door.\n";
+												c "The room is dark, but somehow you don't feel alone. You hear a whirring sound. Or is it breathing? You can't tell.\n";
+												c "Nervously you feel along the wall for a light switch. You find one and flip it on.\n";
+												c "A bright spotlight washes the room with light. You are temporarily blinded. You rub your eyes. When you open them, you can't believe what you see.\n";
+												c "Hundreds of little tin windup cars scurry about the floor. At first they seem to be trying to find a place to hide in the empty room. But they all turn toward you.\n";
+												White;
+												c "\nTurn page(f)\n";
+												cin >> page;
+												if (page == 'f' || page == 'F')
+												{
+													c "Their little engines rev in union. Then they attack. Hundreds and hundreds of little windup cars race toward you.\n";
+													c "You try to back out of the room and slam the door shut. But they're too fast. Like one massive organism, they crowd you out of the room and into the hallway. You leave the cart standing in front of the door and run.\n";
+													c "You dash back toward the storage room, but the cars are fast. They're gaining on you. All you can do is hope they wind down before they reach you.\n";
+													c "But that doesn't happen. In seconds the cars catch up to you. They run you over repeatedly, until the thousands of tiny wheels have the same effect as four life-size tired.\n";
+													c "You're crushed to a pulp. What a pathetic way to die. Run over by windup toys.\n\n";
+												End9:
+													LightRed;
+
+													c "                          _________            ___       ___                         \n";
+													c "                              |       |   |   |         |      |\\   |   |\\         \n";
+													c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+													c "                              |       |   |   |         |      |  \\ |   | /         \n";
+													c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+													White;
+													c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+													c "(type back, menu, or end)\n";
+													i = 1;
+													cin >> GameEndChoice;
+													if (GameEndChoice == "back" || GameEndChoice == "Back")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Page10_Path_2_2;
+													}
+													if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Menu;
+
+													}
+													if (GameEndChoice == "end" || "End")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														LightRed;
+														c "See you soon...";
+														return 0;
+
+													}
+												}
+											}
+											if (GameChoice == "storage" || GameChoice == "Storage")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+											Page11_Path_2_2_1:
+												c "Page 11:\n\n";
+												LightCyan;
+												c "You push the cart back through the door to the storage room. The place is bustling with activity. You approach a plump little woman with rosy cheeks who is, of course, dressed in green.\n";
+												c "\"I can't seem to find the loading dock,\" you explain.\n";
+												c "She shakes her head and smiles. \"You go out to the sales floor, and I'll take this cart to the dock. It's hard to find.\"\n";
+												c "\"But what am I supposed to do?\" you ask. \"I haven't been trained yet.\"\n";
+												c "A worried look crosses her face. \"You don't want to be working here.\"\n";
+												c "She tears the flap off one of the boxes and writes a note on it. \"Here,\" she says as she hands you the flap. \"Take this to the front desk. They'll give you the toy you want.\"\n";
+												c "\"Thank you,\" you say enthusiastically and hurry back to the sales floor. As you do, you read the note:\n\n";
+												Yellow;
+												c "This person has worked off the owed amount.\n";
+												LightCyan;
+												c "You're not sure why she did this, but you're really glad. Not only do you not want to work, there is something creepy about this place. And you don't want to hand around and find out what. Especially after the little guys earlier warning.\n\n";
+											End8:
+												LightRed;
+
+												c "                          _________            ___       ___                         \n";
+												c "                              |       |   |   |         |      |\\   |   |\\         \n";
+												c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+												c "                              |       |   |   |         |      |  \\ |   | /         \n";
+												c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+												White;
+												c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+												c "(type back, menu, or end)\n";
+												h = 1;
+												cin >> GameEndChoice;
+												if (GameEndChoice == "back" || GameEndChoice == "Back")
+												{
+													ConsoleClear;
+													erase;
+													alert;
+													goto Page10_Path_2_2;
+												}
+												if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+												{
+													ConsoleClear;
+													erase;
+													alert;
+													goto Menu;
+
+												}
+												if (GameEndChoice == "end" || "End")
+												{
+													ConsoleClear;
+													erase;
+													alert;
+													LightRed;
+													c "See you soon...";
+													return 0;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					if (GameChoice1 == "go" || GameChoice1 == "Go")
+					{
+						ConsoleClear;
+						erase;
+						alert;
+					Page4_Path_1:
+						c "Page 4:\n\n";
+						LightCyan;
+						c "You run up to catch up to Evan. He's already halfway across the drawbridge. You push and shove your way around the crush of people. It's a good thing you're thin and small.\n";
+						c "\"You sure you want to eat this?\" you ask Evan, as he stoops over to take a bite of the drawbridge. Your feet squish into the spongy gingerbread.\n";
+						c "\"Sure, Evan answers, his mouth full. \"Why not?\"\n";
+						c "\"Well, people have been walking on it,\" you say. \"It's disgusting!\"\n";
+						c "Evan shrugs. \"I've eaten worse.\" You look around and see that everyone else is eating the gingerbread, too.\n";
+						c "You and Evan head into the castle. The smell of sugar and ginger is everywhere. \"This smells better than any bakery!\" you exclaim. At the door, you are greeted by a man with pointy ears who is wearing a green smock, feathered cap, and red shoes that curl up. \'Welcome! Welcome! We have the finest handmade toys available. Come in and enjoy!\"\n";
+						c "You and Evan smile and enter.\n";
+						c "\"He looks like an elf.\" Evan jokes.\n";
+						c "\"Yeah.\" Your stomach rumbles. \"Santra's elves must be setting up franchises.\"\n";
+						c "Your eyes drink up the incredibly delicious looking caste. You want some candy and gingerbread now, but you're nervous about eating unwrapped candy. Your mom's voice in the back of your head keeps repeating itself: \"Don't take unwrapped candy from anyone! You never know what's in it!\"\n";
+						c "You try to distract yourself by looking at all the amazing toys spinning and hopping and skipping and flying around the room. Music fills the air.\n";
+						Blue;
+						c "BANG! BANG! BANG!\n";
+						LightCyan;
+						c "Startled, you turn and see a six-foot-high clown banging a little drum. It's the biggest windup clown you've ever seen! And it stops right in front of you. You're surprised at how real it looks. You turn the key in its back and wind the clown up again. It goes off across the floor, banging its drum.\n";
+						c "You shake your head in disbelief. \"That clown felt like a real person!\" you exclaim to Evan. But Evan's not behind you. He's gone off to look at a mountain of teddy bears.\n";
+						White;
+						c "\nTurn page (f)\n";
+						cin >> page;
+						if (page == 'f' || page == 'F')
+						{
+							ConsoleClear;
+							erase;
+							alert;
+						Page5_Path_1:
+							c "Page 5:\n\n";
+							LightCyan;
+							c "Next, the tinny strains of \"Pop Goes the Weasel\" catch your attention. You see a giant, colorful, grinning jack-in-the-box popping up and surprising people. It springs wildly back and forth. You duck as its arm sweeps above your head. You could have sworn the jack was throwing a left hook.\n";
+							c "A crowd forms when the jack-in-the-box waves and says, \"Howdya do?\" Then the jack bounces back into its box\n";
+							c "You frown. Something is not right about this jack. For one thing, it's too big. And it has a wicked punch.\n";
+							c "You wait to see it pop out again as the crowd turns away. To your surprise, the top of the box cracks open just a few inches. Then the jack's hand slowly slips out.\n";
+							c "The hand reaches into a woman's purse. She doesn't notice. Instead, she's distracted by a giant rubber acrobat stretching across the length of the castle.\n";
+							c "Without thinking, you grab the jack's hand and pull it out of the purse. Gripped tight in its fist is the woman's wallet. You shake the wallet free. It falls to the floor.\n";
+							c "Just then the woman turns and sees her wallet at your feet.\n";
+							c "\"Hellllp!!\" she screams above the din of toys and tunes. \"I'm being robbed!\"\n";
+							c "\"But-but-\" you stammer. \"I wasn't...\" Quickly you realize that you won't be able to explain. How can you convince anyone that the jack-in-the-box is a pickpocket?\n";
+							c "You turn and dash through the crowd. You think you're heading for the drawbridge, but you get turned around and end up in front of two identical mirrored doors. The door on the right has the word \"right\" painted on it. The door on the left shows the word \"left\"\n";
+							c "You glance over your shoulder and see the woman pointing at you. You have to act fast. But which door should you go through? Left? Right?\n";
+							White;
+							c "L/R";
+							c "\nGo back a page(b)\n";
+							cin >> GameChoice2;
+							if (GameChoice2 == 'b' || GameChoice2 == 'B')
+							{
+								ConsoleClear;
+								erase;
+								alert;
+								goto Page4_Path_1;
+							}
+							if (GameChoice2 == 'l' || GameChoice2 == 'L')
+							{
+								ConsoleClear;
+								erase;
+								alert;
+							Page6_Path_1_1:
+								c "Page 6:\n\n";
+								LightCyan;
+								c "You're left handed, so naturally you reach for the left door knob.\n";
+								c "As you step inside the room, you see a huge, ten-foot high cake. A small woman with pointed ears, wearing a green dress with red trim, is standing atop a stepladder cutting slices.\n";
+								c "Dozens of kids are stuffing their faces with cake and playing hopscotch and jacks and dodgeball. The room is a humongous playground. But it doesn't make sense. The castle isn't big enough to hold a room this size.\n";
+								c "Just then, the elf woman hands you a slice of cake. As you stare at the waves of icing, all your resistance melts. You immediately shove your face into the slice.\n";
+								c "The cake is delicious. By the time you swallow your second helping, however, you begin to feel funny. Light-headed. As if you could float across the room. The colors of the other kids' clothes seem brighter, and the music in the room sounds cheerier.\n";
+								c "Something was in that cake. Too much sugar? Your mom is always warning you about eating too much sugar. She says you get hyper. But you don't care. You feel great! You join in a game of hopscotch.\n";
+								c "The day whips by. You're so caught up in your game of hopscotch that you don't notice anything. This is really strange, because you've never been a hopscotch fan before. You've always thought the game was for babies. You prefer sports like soccer. But now all you want to do is throw your stone and hop up and down the grid. You're not even aware of any other kids playing with you. The memory of your best friend, Evan, has been completely wiped away. So has the memory of your home, your mom and dad, your annoying little sister, your school, and your entire life. It's all gone! Wiped away like a clean slate!\n";
+								c "Two fat, wart-covered elves come up to you. The shorter of the two grabs your hand and shakes it. \"Congratulations! You've passed the grade. You're now ready to become a toy.\"\n";
+								c "Both elves bend over, laughing and joking hideously. They think their joke is really funny. You, on the other hand, don't even hear it. You're too caught up in tossing your stone one more time.\n";
+								c "The taller elf peels back your eyelids and shines a light in your face. \"Another one's ready!\" he shouts over his shoulder.\n";
+								c "You're quickly placed on a cart with about a dozen other kids. You all sit quietly. The cart is pulled toward a door at the other end of the room.\n";
+								c "Where are you going?";
+								White;
+								c "\nTurn page (f)\n";
+								cin >> page;
+								if (page == 'f' || page == 'F')
+								{
+									ConsoleClear;
+									erase;
+									alert;
+								Page7Path1_1:
+									c "Page 7:\n\n";
+									LightCyan;
+									c "Everyone's unloaded in a massive hall that looks like a huge workshop. You are led over to a workbench where an ancient elf is tinkering with some sort of gizmo that has a long handle. He stands up and begins to attach the gizmo to your head. Then he dresses you in a red uniform with a tall fur hat.\n";
+									c "When he's finished, he fishes a walnut out of his pocket and pulls up the handle that now runs down the length of your back. Your jaw automatically opens. He slips the walnut into your mouth and yanks the handle down. Your teeth easily break the shell. The elf separates the shell from the nut meat and eats the walnut.\n";
+									c "He slaps you on the back and shouts, \"Done!\"\n";
+									c "Another elf wheels you out to the toy store and places you beside a long row of nutcrackers, all dressed in garish uniforms and tall furry hats. Eventually you are bought by an old woman with a yen for walnuts, and you spend the next ten years cracking nuts.\n\n\n\n";
+								End1:
+									LightRed;
+
+									c "                          _________            ___       ___                         \n";
+									c "                              |       |   |   |         |      |\\   |   |\\         \n";
+									c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+									c "                              |       |   |   |         |      |  \\ |   | /         \n";
+									c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+									White;
+								}   c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+								c "(type back, menu, or end)\n";
+								a = 1;
+								cin >> GameEndChoice;
+								if (GameEndChoice == "back" || GameEndChoice == "Back")
+								{
+									ConsoleClear;
+									erase;
+									alert;
+									goto Page5_Path_1;
+								}
+								if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+								{
+									ConsoleClear;
+									erase;
+									alert;
+									goto Menu;
+
+								}
+								if (GameEndChoice == "end" || "End")
+								{
+									ConsoleClear;
+									erase;
+									alert;
+									LightRed;
+									c "See you soon...";
+									return 0;
+
+								}
+
+							}
+							if (GameChoice2 == 'r' || GameChoice2 == 'R')
+							{
+								ConsoleClear;
+								erase;
+								alert;
+							Page6_Path_1_2:
+								c "Page 6:\n\n";
+								LightCyan;
+								c "Behind the right door you find an escalator going up. It's painted all the colors of the rainbow. You step on. Suddenly whistles scream, bells clang, and all sorts of colored lights begin to flash. You can't see where the moving stairs end. They just rise up and up. You ride and ride and ride. You seem to go forever. Finally you reach the top.\n";
+								c "As you step off, you can't see where you're walking. It's totally dark and quiet. Suddenly the silence is broken by an eerie laugh.\n";
+								Blue;
+								c "\"HA! HA! HA! HA! HA! HA!\"";
+								LightCyan;
+								c "It sounds like something you'd hear in a fun house. Before you can get your bearings, the floor disappears from under you. You're falling!\n";
+								c "With a thump, you bounce on some sort of cushioned mat and roll toward a spinning wheel that looks like something a hypnotist would use to put you under.\n";
+								c "You can't take your eyes off the wheel. The blues, pinks, yellows, greens, and reds seem to be pulling you in. Something in the back of your brain tells you to look away. You struggle to avert your gaze.\n";
+								White;
+								c "\nTurn page (f)\n";
+								cin >> page;
+								if (page == 'f' || page == 'F')
+								{
+									ConsoleClear;
+									erase;
+									alert;
+								Page7_Path_1_2:
+									c "Page 7:\n\n";
+									LightCyan;
+									c "You duck your head, and the spell of the colors breaks. You begin sliding down a chute and land in a big pit of balls right beside the place where you opened the door.\n";
+									c "Evan has joined a crowd watching a huge black stuffed spider shoot a thread up toward the ceiling.\n";
+									c "You wave to get Evan's attention, and he comes over. \"You've got to try this ride!\" you say, leading him to the mirrored door on the right.\n";
+									c "\"What ride " << FirstName << " ?\" Evan says.\n";
+									c "\"Go through the right door and up the escalator. I'll wait for you here,\" you tell him. Evan shrugs and follows your instructions.\n";
+									c "You can't wait to see his face when he lands in the ball pit. You wait five minutes. Ten minutes. Still no Evan. Fifteen minutes. Half an hour!\n";
+									c "You panic. You've got to do something. Maybe he came out in another place and went home. Maybe he's stuck.\n";
+									White;
+									c "Do you go to Evan's house (house)? Do you look for help (help)? Do you go up and check on him (check)?\n";
+									c "\nGo back a page(b)\n";
+
+									cin >> GameChoice3;
+
+									if (GameChoice3 == "check" || GameChoice3 == "Check")
+									{
+										ConsoleClear;
+										erase;
+										alert;
+									Page8_Path_1_2_3:
+										c "Page 8:\n\n";
+										LightCyan;
+										c "Without hesitation, you open the left door again and ride the escalator up into the darkness. At the top, you bump into someone standing in the shadows.\n";
+										c "\"Hey!\" the person shouts.\n";
+										c "\"Evan!\" you say, grabbing his shirt. \"It's me! What are you doing?\"\n";
+										c "\"I hate dark places,\" he explains. \"And this ride is way too scary. I want to go back down!\" He tries to push you aside to climb back down the escalator the wrong way.\n";
+										c "\"You can't go back,\" you reply.\n";
+										c "\"Why can't they turn on some lights?\" he complains.\n";
+										c "\"Follow me,\" you say as you step forward.\n";
+										c "\"We'll go down the chute together\"\n";
+										c "Suddenly the quiet is broken.\n";
+										Blue;
+										c "\"HA! HA! HA! HA! HA! HA!\"\n";
+										LightCyan;
+										c "\"Close your eyes!\" you yell as the crazy multicolored spinning wheel comes into view. You glide down the twisting chute. Evan is screaming behind you. The panic in his voice is real, but you're laughing anyway. You love crazy rides like this. You know you'll want to do it again when you reach the end.\n";
+										c "But the chute seems longer than last time. You keep sliding down and down. You expect at any moment to burst through the end into the ball pit. But you don't\n";
+										c "You fall for hours and hours. The darkness and the heat are intense. You start to sweat. THen the temperature begins to cool down, and you start getting a chill. As you and Evan continue to fall, you get colder and colder, until you finally slide out onto a giant pile of snow.\n";
+										c "\"Snow?\" you shriek. \"It isn't snowing in Freeville.\"\n";
+										c "\"Where are we?\" Evan screams pathetically.\n";
+										c "\nTurn page (f)\n";
+										cin >> page;
+										if (page == 'f' || page == 'F')
+										{
+											ConsoleClear;
+											erase;
+											alert;
+										Page9_Path_1_2_3:
+											c "Page 9:\n\n";
+											LightCyan;
+											c "In front of you stands a tiny red brick cottage. A small curl of smoke drifts out of the chimney\n";
+											c "The cottage door opens, and a smiling little old lady hurries out. \"Oh My!\" she exclaims, helping you up. \"You must be cold\" Let's get you inside.\n";
+											c "She leads you and Evan into the cottage and hands you each a steaming cut of hot chocolate.\n";
+											c "\"Where are we?\" you blurt out as you warm your hands on your cup.\n";
+											c "The old lady smiles. For the first time you get a good look at her. She looks kind of familiar. Sweet. But she seems a little nervous. She's dressed in a red velvet dress with white fur trim.\n";
+											c "\"Why, you're at the North Pole, of course,\" she says, clapping her hands.\n";
+											c "\"Yeah, right\" you answer sarcastically. \"And you're Mrs. Claus.\"\n";
+											c "\" Oh, yes,\" she replies jovially. \"I thought you'd never guess!\"\n";
+											c "Just then you hear a big, booming voice singing \"Rudolph, the Red-Nosed Reindeer.\" The front door bursts open, and a large, rounded man also dressed in red velvet white fur trim is standing on the doorstep. He gives a hearty laugh, but his eyes are impatient. \"Why aren't they in the factory?\" he shouts.\n";
+											c "\"I-I was just sending them over, Kris,\" Mrs.Claus stammers.\n";
+											c "\"Well, hop to it,\" he growls. \"We've got a schedule to keep, and the elves have been dropping like flies.\"\n";
+											c "\"This way,\" Mrs.Claus commands. She takes your unfinished cups of hot chocolate away and hurriedly stacks them in the sink. Then she motions you to follow her.\n";
+											c "\"We're going back outside!\" you ask.\n";
+											c "Mrs.Claus bites her lip, \"You won't be outside for long.\"\n";
+											c "You and Evan follow her to a large hall where dozens of kids are hard at work making toys. She leads you to a worktable and teaches you how to assemble wooden trains.\n";
+											c "\"What's going on?\" you ask the kid at the table next to you.\n";
+											c "\"Don't you get it?\" she says unhappily. \"Santa isn't the jolly fellow you meet at the mall. He's a tyrant. And we're his slaves\"\n";
+											c "\"Slaves?\" you repeat.\n";
+											c "\"We're taking the place of elves.\" she explains. \"Most of them were worked until they dropped dead. Now we're their replacements.\"\n\n\n";
+										End2:
+											LightRed;
+
+											c "                          _________            ___       ___                         \n";
+											c "                              |       |   |   |         |      |\\   |   |\\         \n";
+											c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+											c "                              |       |   |   |         |      |  \\ |   | /         \n";
+											c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+											White;
+											c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+											c "(type back, menu, or end)\n";
+											b = 1;
+											cin >> GameEndChoice;
+											if (GameEndChoice == "back" || GameEndChoice == "Back")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+												goto Page7_Path_1_2;
+											}
+											if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+												goto Menu;
+
+											}
+											if (GameEndChoice == "end" || "End")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+												LightRed;
+												c "See you soon...";
+												return 0;
+											}
+											else
+											{
+												goto End2;
+											}
+
+										}
+
+									}
+									if (GameChoice3 == "help" || GameChoice3 == "Help")
+									{
+										ConsoleClear;
+										erase;
+										alert;
+									Page8_Path_1_2_2:
+										c "Page 8:\n\n";
+										LightCyan;
+										c "You spot one of the castle's elves sitting at a raised desk. He looks as if he's the store manager. He's really busy, but you interrupt him anyway.\n";
+										c "\"Excuse me!\" you shout.\n";
+										c "The elf peers down over his high desk at you. He has the ugliest nose you've ever seen. It's huge. A giant wart sprouts from the end, with two black hairs growing out of its tip. \"Yeah?\" he replies gruffly.\n";
+										c "You shrink back. This guy doesn't look very friendly. You're not so sure you want his help.\n";
+										White;
+										c "Take his help (yes)? Try something else (no)?\n";
+										cin >> GameChoice4;
+										if (GameChoice4 == "yes" || GameChoice4 == "Yes")
+										{
+											ConsoleClear;
+											erase;
+											alert;
+										Page9_Path_1_2_2_1:
+											c "Page 9:\n\n";
+											LightCyan;
+											c "\"Uh, I think my friend is stuck in that ride over there.\" You point toward the door across the room.\n";
+											c "\"Hmmm.\" The elf mods knowingly. \"I'll see what I can do.\" He pulls a gold cord hanging behind him, and a bell rings.\n";
+											c "Before you can blink, another elf pops up beside you. He salutes. \"Yes, sir!\"\n";
+											c "\"Help this customer, proto!\" The manager goes back to his work.\n";
+											c "\"I'm gumbo,\" the elf says cheerfully.\n";
+											c "You explain your problem.\n";
+											c "Gumbo nods. \"Follow me.\" He pauses. \"But first, put this on.\" He hands you some army fatigues. \"It's kind of dirty where we're going. You'll want to protect your clothes.\"\n";
+											c "\"Okay,\" you tell him, accepting the fatigues.\n";
+											c "You put them on.\n";
+											c "Gumbo leads you to a back room full of green, red, and blue vats. They're brimming with a gelatinlike substance.\n";
+											c "\"Yuck,\" you say, pointing to the vats. \"It'd be really gross to fall in one of those.\n";
+											c "\"It happens,\" Gumbo replies. \"More often than you can imagine,\" he added ominously.\n";
+											c "\"We dye life-sized action figures in these vats.\" Gumbo tells you. \"We're the only store that sells them.\"\n";
+											c "For some reason Gumbo's response makes you nervous. All you want is to find Evan. \"Evan's not back here,\" you protest. \"He's stuck in that ride on the main floor.\"\n";
+											c "\"This is a shortcut,\" Gumbo explains. \"If he's stuck, we can reach him more easily from here.\" He leads you up a flight up stairs and across the catwalk over the vats. You hold on tightly to the railing.\n";
+											c "Gumbo waves you over to a tiny door at the end of the catwalk. The two of you crawl through. You find yourself near the middle of the giant chute.\n";
+											c "\"Evan!\" you call.\n";
+											c "\"Help me!\" Evan responds faintly.\n";
+											c "You crawl up the chute toward Evan's voice.\n";
+											c "Gumbo follows you.\n";
+											c "\"We're coming,\" you say reassuringly, awkwardly gripping the sides of the chute. It takes about ten minutes, but you finally see Evan hanging from the rafters above a huge hole in the chute's floor/\n";
+											White;
+											c "\nTurn page (f)\n";
+											cin >> page;
+											if (page == 'f' || page == 'F')
+											{
+												ConsoleClear;
+												erase;
+												alert;
+											Page10_Path_1_2_2_1:
+												c "Page 10:\n\n";
+												LightCyan;
+												c "\"The chute is broken,\" you gasp. You move toward Evan and grab his arm. But just as you do, Gumbo gives you a hard push!\n";
+												c "You scramble to catch your balance, but instead you fall through the hole in the chute, dragging Evan with you. That's when you notice that it isn't a hole at all. It's a trapdoor. And the trapdoor is right over a vat of green gunk! You and Evan struggle to stay afloat, but the green gelatin pulls you farther and farther down until you can no longer breathe.\n";
+												c "The green gunk covers your entire body.\n";
+												c "You're smothered!\n";
+												c "After about an hour Gumbo pulls you and Evan from the vat. He poses you in action positions and expertly wraps your hands around toy guns. Within seconds, your bodies take on the hardness of plastic. You and Evan are now part of a life-sized collection of figurines that a retired general has ordered for his grandson's Christmas present.\n";
+												c "The general has insisted the toys be lifelike. And they couldn't be any more lifelike than you and Evan.\n";
+												c "Except if you were still alive!\n\n\n";
+											End3:
+												LightRed;
+
+												c "                          _________            ___       ___                         \n";
+												c "                              |       |   |   |         |      |\\   |   |\\         \n";
+												c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+												c "                              |       |   |   |         |      |  \\ |   | /         \n";
+												c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+												White;
+											}   c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+											c "(type back, menu, or end)\n";
+											C = 1;
+											cin >> GameEndChoice;
+											if (GameEndChoice == "back" || GameEndChoice == "Back")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+												goto Page8_Path_1_2_2;
+											}
+											if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+												goto Menu;
+
+											}
+											if (GameEndChoice == "end" || "End")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+												LightRed;
+												c "See you soon...";
+												return 0;
+
+											}
+											else
+											{
+												goto End3;
+											}
+
+										}
+										if (GameChoice4 == "no" || GameChoice4 == "No")
+										{
+											ConsoleClear;
+											erase;
+											alert;
+										Page9_Path_1_2_2_2:
+											c "Page 9:\n\n";
+											LightCyan;
+											c "\"Never mind,\" you say sheepishly, as you stare up at the ugly elf. You turn and head back toward the ball pit, but on the way you decide to bag it. Evan can find his own way home\n";
+											c "You're tired of all this kid stuff.\n";
+											c "Four weeks later, it's Christmas morning. Excited, you hurry to the living room. \"Mom! Dad!\" you call. \"Hurry up!\"\n";
+											c "Once your mom and dad sit down with their coffee, you tear into your presents.\n";
+											c "The first one is from Grandma: flannel pajamas with feet. She still thinks you're three years old. Next is a large package from your mom and dad. You're very excited-you can tell this is your big present. As you tear it open, you scream in delight. It's the mountain bike kit you've been asking for.\n";
+											c "\"I can't believe you got me this!\" you shout, as you run to the garage to get your tool kit. Your parents just laugh as they watch you put the bikes together.\n";
+											c "It takes longer than you expected, but in three hours the bike is finally ready for a road test. You push it toward the front door. You want to ride over to Evan's house first.\n";
+											c "On your way over to Evan's, you notice a doll walking stiff-legged along the sidewalk with what looks like a child's dress in its mouth. Its blue eyes are spinning in opposite directions, and an eerie growl rumbles from its throat. The doll is totally weird.\n";
+											c "But not as weird as what you see in the middle of the next block.\n";
+											c "At the bottom of someone's driveway, a kid is stretched out on his back while a large remote-control car runs back and forth over him.\n";
+											c "You shake your head in disbelief. To be killed by the remote-control car you get for Christmas-that's brutal. Truly brutal.\n";
+											c "In the next block you turn up Evan's driveway and skid a cool fishtail. You dash up to the front door and ring the bell. A few seconds pass, and the front door explodes "; Blue; c "KABOOM!\n"; LightCyan;
+											c "You're thrown off the front stoop by the explosion. A blood curdling scream brings you back to your senses. Evan, dressed in some kind of space suit, comes leaping through the smoking doorway.\n";
+											c "He aims some sort of laser gun at you.\n";
+											White;
+											c "\nTurn page (f)\n";
+											cin >> page;
+											if (page == 'f' || page == 'F')
+											{
+												ConsoleClear;
+												erase;
+												alert;
+											Page10_Path_1_2_2_2:
+												c "Page 10:\n\n";
+												LightCyan;
+												c "Reflexively, you roll to the right. And it's a good thing you do, because the spot where you were just lying is now a gaping hole.\n";
+												c "Without thinking, you leap up and dive toward Evan. He's much larger than you, but you catch him at the knees and knock him off balance. As he's falling, you rip of his goggles and helmet and pin your elbow into his throat.\n";
+												c "\"Whaaaa...,\" Evan gurgles.\n";
+												c "He struggles for a second, then goes limp. He drops the laser gun and raises his hands over his head in submission.\n";
+												c "\"What's gotten into you?\" you scream.\n";
+												c "Evan takes two deep breaths. \"I don't know. I just put on this space suit, and I went crazy.\" \"Evan!\" his mom says shar[ly from the doorway. Her left arm is bleeding. \"What has gotten into you!\"\n";
+												c "Evan turns toward her. \"I don't know, Mom,\" he says apologetically. \"It's like the suit took control of me when I put the helmet on.\"\n";
+												c "\"Obviously, it's not a toy,\" Mrs. Tomchin says. \"I'll return it first thing tomorrow.\"\n";
+												White;
+												c "Is this a good idea (yes)? Do you stand against this (no)?\n";
+												cin >> GameChoice5;
+												if (GameChoice5 == "yes" || GameChoice5 == "Yes")
+												{
+													ConsoleClear;
+													erase;
+													alert;
+												Page11_Path_1_2_2_2_1:
+													c "Page 11:\n\n";
+													LightCyan;
+													c "Both you and Evan nod in complete agreement.\n";
+													c "The next day, Mrs. Tomchin returns the virtual-reality suit to the elve's toy castle and discovers that the store has been closed down. Apparently, all the toys sold at the toy store were made to hurt people. Nearly a third of Freeville was massacred around the Christmas tree the day before. All over town people are trying to pick up the pieces and understand what happened.\n";
+													c "You thank god that you told your parents you were too old for toys. If only that were true, you think, as you watch a six-year-old playing jacks by herself on the sidewalk in front of your house.\n";
+													c "You sit down beside her and challenge her to a game of threesies.\n";
+												End4:
+													LightRed;
+
+													c "                          _________            ___       ___                         \n";
+													c "                              |       |   |   |         |      |\\   |   |\\         \n";
+													c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+													c "                              |       |   |   |         |      |  \\ |   | /         \n";
+													c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+													White;
+													d = 1;
+													c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+													c "(type back, menu, or end)\n";
+													cin >> GameEndChoice;
+													if (GameEndChoice == "back" || GameEndChoice == "Back")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Page10_Path_1_2_2_2;
+													}
+													if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Menu;
+
+													}
+													if (GameEndChoice == "end" || "End")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														LightRed;
+														c "See you soon...";
+														return 0;
+													}
+													else
+													{
+														goto End4;
+													}
+												}
+												if (GameChoice5 == "no" || GameChoice5 == "No")
+												{
+
+													ConsoleClear;
+													erase;
+													alert;
+												Page11_Path_1_2_2_2_2:
+													c "Page 11:\n\n";
+													LightCyan;
+													c "\"Maybe you should let us return it,\" you tell Mrs. Tomchin. You're a bit worried about her going to the toy castle alone.\n";
+													c "\"Yeah, Mom. I'll bring it back,\" Evan says. \"Okay. But do it first thing tomorrow,\" Mrs. Tomchin tells him.\n";
+													c "The next day, you and Evan bring the suit to the toy castle.\n";
+													c "\"What was the problem?\" a customer-service elf asks.\n";
+													c "\" It took control of me when I put it on!\" Evan tells him.\n";
+													c "The elf nods. \"We've had several complaints about this suit already.\" He takes the suit and carefully folds it up. \"I can give you a refund. Or maybe you'll find something else?\"\n";
+													c "Evan shakes his head. \"I'll take a refund.\" You wait as the elf fills out some paperwork. He then hands Evan several crisp bills.\n";
+													c "\"Thanks for your help,\" Evan tells the elf as the two of you exit the store.\n";
+													c "\"You're welcome,\" says the elf. As soon as you leave, he motions to one of the sales elves. \"Put this out on the sales floor!\" he instructs.\n";
+													c "\"And mark it down fifty percent!\"\n";
+												End5:
+													LightRed;
+
+													c "                          _________            ___       ___                         \n";
+													c "                              |       |   |   |         |      |\\   |   |\\         \n";
+													c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+													c "                              |       |   |   |         |      |  \\ |   | /         \n";
+													c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+													White;
+													e = 1;
+													c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+													c "(type back, menu, or end)\n";
+													cin >> GameEndChoice;
+													if (GameEndChoice == "back" || GameEndChoice == "Back")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Page10_Path_1_2_2_2;
+													}
+													if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Menu;
+
+													}
+													if (GameEndChoice == "end" || "End")
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														LightRed;
+														c "See you soon...";
+														return 0;
+													}
+													else
+													{
+														goto End4;
+													}
+
+												}
+											}
+
+										}
+									}
+									if (GameChoice3 == "house" || GameChoice3 == "House")
+									{
+										ConsoleClear;
+										erase;
+										alert;
+									Page8_Path_1_2_1:
+										c "Page 8:\n\n";
+										LightCyan;
+										c "When you get to Evan's house, his mom opens the door.\n";
+										c "\"Is Evan home yet, Mrs. Tomchim?\" you ask politely.\n";
+										c "She shakes her head. \"Doesn't he usually walk home with you?\"\n";
+										c "You nod and explain that the two of you were separated at the new toy castle surrounding the Camperdown Maple.\n";
+										c "\"I'm sure he'll be home soon,\" Mrs. Tomchin says reassuringly. \"I'll have him call you when he gets in.\"\n";
+										c "\"Thanks, Mrs Tomchin,\" you reply, and head home.\n";
+										c "That night Evan doesn't call. When you go to bed, you decide you'll chew him out at school tomorrow.\n";
+										c "It seems as if you've just fallen asleep when you're startled awake by a sharp banging on your bedroom door. Your mom is calling you.\n";
+										c "\"Yeah, Mom,\" you answer. You glance out the window and see that it's still dark outside. But that's no surprise, since the days are so short this time of year. It's always dark in the morning, and it's nearly dark when you get out of school. \"What time is it?\"\n";
+										c "\" It's two A.M.,\" your mom answers as she bursts into your room. \"Evan's mom just called. Evan never made it home!\"\n";
+										c "\"What?\" you answer, shocked. You hop out of bed and pull on your robe. Then you follow your mom downstairs.\n";
+										c "\"The police are here,\" your mom says on the steps.\n";
+										c "Huh? What did you do now? You can't think of anything you've done wrong...lately.\n";
+										c "There was that window you broke last month, but you already paid for it to be fixed with two months' worth of your allowance.\n";
+										White;
+										c "\nTurn page (f)\n";
+										cin >> page;
+										if (page == 'f' || page == 'F')
+										{
+											ConsoleClear;
+											erase;
+											alert;
+										Page9_Path_1_2_1:
+											c "Page 9:\n\n";
+											LightCyan;
+											c "Two police officers are standing in the living room. The crackle of their walkie-talkies hurts your ears. You're still not completely awake. You shake your head, hoping this is all a dream. But it isn't.\n";
+											c "\"Please sit,\" one of the officers says. He's skinny, so skinny that you wonder how he could pass the physical.\n";
+											c "You sit.\n";
+											c "\"I'm Officer McAvoy,\" he says. \"and this is Officer Stein.\" He points to the female officer standing beside him. She looks more like a cop than McAvoy does. She has a serious, no nonsense expression on her face. \"We'd like to know exactly when you last saw your friend.\"\n";
+											c "You nod. \"At that new toy store on Maple Street,\" you answer. You explain how you were separated when Evan tried the ride.\n";
+											c "The two officers glance knowingly at each other. \"we suspected as much,\" Officer Stein says, \"In fact-\"\n";
+											c "\"What do you mean?\" your mom interrupts. Officer McAvoy holds up his hand as if to say, \"Don't ask.\" \"We'll be in touch,\" he says, and he and Officer Stein go back out the front door.\n";
+											c "You and your mom stare at each other. \"Now, what exactly is this toy store?\" your mom asks with a serious look on her face.\n";
+											c "\"It's this really cool new castle that's built around the Camperdown Maple,\" you reply. \"They make all their own toys, and the people that work there look like elves.\"\n";
+											c "\"Elves?\" your mom repeats. \"You've got to be kidding.\"\n";
+											c "\"No,\" you protest. \"They even have pointy ears.\"\n";
+											c "Your mom goes to the closet and pulls out your coats. \"Let's go investigate this place.\"\n";
+											c "Cool, you think. It's two A.M., and you're going on an adventure. What's gotten into your mom? She never does neat things like this.\n";
+											c "But then you get an eerie feeling. If Evan disappeared at the elves' toy castle, then this store is dangerous. You don't want to be snooping around it at two A.M. You would prefer to wait until the light of day.\n";
+											White;
+											c "\nDo you go along (go)? Do you wait until morning (wait)?\n";
+											c "\nGo back a page(b)\n";
+											if (GameChoice6 == "b" || GameChoice6 == "B")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+												goto Page8_Path_1_2_1;
+											}
+											cin >> GameChoice6;
+											if (GameChoice6 == "wait" || GameChoice6 == "Wait")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+											Page10_Path_1_2_1_2:
+												c "Page 10:\n\n";
+												LightCyan;
+												c "Your mom agrees to wait until daylight to investigate the castle.\n";
+												c "You and your mom go back to bed. As usual, the alarm goes off at 6:30 A.M. You automatically slam down the snooze button for an extra ten minutes.\n";
+												Blue;
+												c "BUUZZZZZZZ";
+												LightCyan;
+												c " That ten minutes passes fast. The clock must've sped up. It seems as if it always does when you hit the snooze button. You groan and stretch, making such a racket that you sound like a herd of wild animals.\n";
+												c "\"Sounds like you're waking up from the Ice Age,\" your mom calls from the hallway as she passes by. \"Get up!\"\n";
+												c "Slowly you crawl out of bed. You hate morning light. It makes you squint. You feel your way across the room and skirt a few obstacles like a chair and schoolbooks, but you plow right into the leg of your desk\n";
+												c "\"Ouch!\" you scream in agonizing pain. Your big toe throbs. \"What a knucklehead,\" you chide yourself. You can't believe you've done something so stupid.\n";
+												White;
+												c "\nTurn page (f)\n";
+												cin >> page;
+												if (page == 'f' || page == 'F')
+												{
+													ConsoleClear;
+													erase;
+													alert;
+												Page11_Path_1_2_1_2:
+													c "Page 11:\n\n";
+													LightCyan;
+													c "You hobble into the bathroom for a quick shower. Just as you step under the water, your mom bursts into the bathroom.\n";
+													c "\"Mom!\" you tell in exasperation. How many times have you told her not to walk in on you when you're in the bathroom? \"I need privacy!\" She never listens.\n";
+													c "\"I'm not looking. I'm not looking,\" your mom says as she covers her eyes. \"You've got a phone call " << FirstName << ".\" She holds out the cordless phone.\n";
+													c "\"Can't it wait?\" you ask impatiently.\n";
+													c "\"It's Evan,\" she says. \"I think you want to take this. Now dry off and take the phone.\" She leaves it on the sink as she walks out.\n";
+													c "You wrap a towel around your waist and grab the phone. \"Evan! Are you all right?\"\n";
+													c "\"Yeah, yeah,\" Evan says casually. \"I got lost in the store. When they closed, I was locked in for the night.\"\n";
+													c "\"Really?\" you say. \"Cool! I'd lke to be locked up with all those toys.\"\n";
+													c "\"It was pretty boss,\" Evan admits. \"Did you know they've got lasers and holographic targets?\"\n";
+													c "\"Do you think you could get us locked in tonight?\" you ask excitedly.\n";
+													c "\"No problema,\" Evan boasts. \"Meet me after school.\"\n";
+													c "Later that afternoon, you and Evan head for the toy shop. Once there, Evan leads you to a utility closet off the main floor. \"In here,\" he says. \"They won't find us.\"\n";
+													c "\"Great!\" you answer. The two of you squeeze into the closet. The overpowering smell of ammonia almost makes you hurl. You pinch your nose, breathe through your mouth, and wait. You're there for hours, listening for the noise in the store to die down.\n";
+													c "\"You have a watch?\" you whisper.\n";
+													c "\"Nope,\" Evan says. You both continue to wait.\n";
+													c "Your legs begin to fall asleep from standing in one place for so long. You realize that you should have waited and hid just before the store closed. Brilliant planning.\n";
+													White;
+													c "\nTurn page (f)\n";
+													c "\nGo back a page(b)\n";
+													cin >> page;
+													if (page == 'f' || page == 'F')
+														if (page == 'b' || page == 'B')
+														{
+															ConsoleClear;
+															erase;
+															alert;
+															goto Page10_Path_1_2_1_2;
+														}
+													{
+														ConsoleClear;
+														erase;
+														alert;
+													Page12_Path_1_2_1_2:
+														c "Page 12:\n\n";
+														LightCyan;
+														c "Finally the store quiets down. You and Evan wait for what seems like another half hour before you crack the door.\n";
+														c "The main floor of the store is dark and quiet. \"Come on,\" Evan whispers. You follow him out of the closet and across the floor to a large table. Dozens of laser guns are scattered across it. Next to it stands a small black box. Evan flips the switch on the box's side. It hums with energy.\n";
+														c "\"Watch this!\" Evan picks up a laser gun. He reaches down and pushes a button on the box. The box projects a 3-D holographic Old West gunslinger in the air.\n";
+														c "\"Draw!\" it shouts.\n";
+														c "Evan quickly points his laser gun and fires. The gunslinger is faster and blasts Evan. In shock you watch Evan fly across the shop. His head crashes through the glass doors of a large shelf.\n";
+														c "\"Too slow,\" the gunslinger drawls.\n";
+														White;
+														c "\nTurn page (f)\n";
+														c "\nGo back a page(b)\n";
+														cin >> page;
+														if (page == 'b' || page == 'B')
+														{
+															ConsoleClear;
+															erase;
+															alert;
+															goto Page11_Path_1_2_1_2;
+														}
+														if (page == 'f' || page == 'F')
+														{
+															ConsoleClear;
+															erase;
+															alert;
+														Page13_Path_1_2_1_2:
+															c "Page 13:\n\n";
+															LightCyan;
+															c "\"Evan!\" you scream. You start toward Evan when out of the corner of your eye you see the gunslinger toward you.\n";
+															c "Desperate, you grab a laser gun and duck behind the table.\n";
+															c "\"Draw!\" The gunslinger shouts, and fires.\n";
+															c "The table splinters.\n";
+															c "You fire a wide to the left and explode a pile of blocks.\n";
+															c "\"Too slow!\" the gunslinger drawls again.\n";
+															c "You scramble on your hands and knees behind a stack of dolls.\n";
+															c "The gunslinger spots you and shouts,\n";
+															c "\"Draw!\"\n";
+															Blue;
+															c "BOOM!";
+															LightCyan;
+															c " Doll parts fly in all directions. You fire dead-on and hit the gunslinger in his chest.\n";
+															c "\"Oh, you got me pardner,\" he gasps before he disintegrates.\n";
+															c "You lean against a large gingerbread house and catch your breath. \"Too close,\" you gasp.\n";
+															c "You hear the black box begin to hum again. You dive for it and knock the switch off. The last thing you want is another gunslinger to fight.\n";
+															c "Slowly, you work your way across the shop to Evan. You can hear him gurgling.\n";
+															c "\"Help,\" he says weakly. Miraculously, he is still alive. You drag him out of the shop and flag down a passing car.\n";
+															c "The driver calls 911 on his cell phone. The ambulance and the police arrive together. THe sirens wake up the entire town.\n";
+															c "\"Is he going to make it?\" you ask the EMS worker.\n";
+															c "\"Sure,\" she answers as she lifts Evan into the ambulance. \"He's just in shock.\"\n";
+															White;
+															c "\nTurn page (f)\n";
+															c "\nGo back a page(b)\n";
+															cin >> page;
+															if (page == 'b' || page == 'B')
+															{
+																ConsoleClear;
+																erase;
+																alert;
+																goto Page12_Path_1_2_1_2;
+															}
+															if (page == 'f' || page == 'F')
+															{
+																ConsoleClear;
+																erase;
+																alert;
+															Page14_Path_1_2_1_2:
+																c "Page 14:\n\n";
+																LightCyan;
+																c "Relieved, you explain to the police what happened. The two officers hop into a cruiser and head over to the house where the owners of the new toy shop live. When he police arrive, the owners have already cleared out.\n\n";
+																c "A few weeks later, an item appears on the back of the Freeville News Ledger:\n\n";
+																LightRed;
+																c "Toy Shop Terror\n";
+																Yellow;
+																c "Dec. 23- The owners of a toy shop in Freeville have been apprehended while attempting to cross the border into Canada. According to authorities, a group of a dozen small-statured toy makers were trying to escape a warrant for their arrest on the grounds of making lethal toys and selling them for Christmas...\n\n";
+															End7:
+																LightRed;
+																c "                          _________            ___       ___                         \n";
+																c "                              |       |   |   |         |      |\\   |   |\\         \n";
+																c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+																c "                              |       |   |   |         |      |  \\ |   | /         \n";
+																c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+																White;
+																c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+																c "(type back, menu, or end)\n";
+																g = 1;
+																cin >> GameEndChoice;
+																if (GameEndChoice == "back" || GameEndChoice == "Back")
+																{
+																	ConsoleClear;
+																	erase;
+																	alert;
+																	goto Page9_Path_1_2_1;
+																}
+																if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+																{
+																	ConsoleClear;
+																	erase;
+																	alert;
+																	goto Menu;
+																}
+																if (GameEndChoice == "end" || "End")
+																{
+																	ConsoleClear;
+																	erase;
+																	alert;
+																	LightRed;
+																	c "See you soon...";
+																	return 0;
+																}
+															}
+														}
+													}
+												}
+											}
+											if (GameChoice6 == "go" || GameChoice6 == "Go")
+											{
+												ConsoleClear;
+												erase;
+												alert;
+											Page10_Path_1_2_1_1:
+												c "Page 10:\n\n";
+												LightCyan;
+												c "You figure your mom will protect you from any harm, so you follow her to the toy store. To your surprise, the castle is still open. Flashing colored lights cover the edges of the building and the limbs of the Camperdown Maple. \"Pop Goes the Weasel\" blasts out of giant speakers.\n";
+												c "\"Isn't there a town ordinance against this?\" your mom asks, irritated. \"They shouldn't be open at this time of night. This must be illegal. I'm calling town hall first thing in the morning.\" She pulls into the public parking lot next door. The two of you march to the castle's entrance. Two elflike people are tossing glitter into the air.\n";
+												c "\"It looks like New Year's Eve,\" you crack, as the glitter falls on your mom but misses you. Your mom doesn't respond. She's obviously angry at all the noise and commotion they're making at this time of the morning.\n";
+												c "To your surprise, however, the place is packed. Dozens of people are milling about inside and playing with toys.\n";
+												c "Your mom immediately spots someone she recognizes. She drags you over to him. It's Mayor Smith, and he's riding a toy train around in a circle. He's dressed in a wool suit and tie, but something about his eyes doesn't look right. He's covered with the same glitter that's on your mom. It looks very festive.\n";
+												c "Your mom begins to lecture the mayor about violations of town policy and disturbing the peace. But Mayor Smith continues to ride the train without acknowledging your mom. In fact, he acts as if he doesn't even see her. He just sits on the caboose with an idiotic grin plastered on his face.\n";
+												c "\"Mayor Smith, this is ridiculous,\" your mom begins. She's about to grab the mayor by his coat when she notices a shelf filled with all kinds of dolls. As if she's suddenly been hypnotized, she walks away from the mayor, sits on the floor, and begins to play with the dolls.\n";
+												White;
+												c "\nTurn page (f)\n";
+												cin >> page;
+												if (page == 'f' || page == 'F')
+												{
+													ConsoleClear;
+													erase;
+													alert;
+												Page11_Path_1_2_1_1:
+													c "Page 11:\n\n";
+													LightCyan;
+													c "\"You've been a bad dolly,\" your mom scolds the first doll in a childlike voice. \"You wet your panties. Now I'm going to have to change you.\" She lays the doll on the floor and begins to unbutton its clothes.\n";
+													c "What is going on?\n";
+													c "All you see are adults completely obsessed with toys. And every one of them is covered with that glitter. Your teacher, Mrs. Loggia, is playing jacks with Principal Morgolis. The two police officers who came to your house are playing pat-a-cake in the middle of the ball pit, while Mrs. Tomchin is screaming that she's king of the hill from a branch of the Camperdown Maple.\n";
+													c "You shake your head in disbelief. Has every adult in town gone nuts? That's when a giant jack-in-the-box pops open and startles you.\n";
+													c "\"Not again!\" you exclaim as the jack pops out. But what startles you even more is the jack's face. It looks exactly like Evan, but with clown makeup! You approach the jack-in-the-box with caution. You don't trust anything in this crazy place.\n";
+													c "To your surprise, it calls out your name!\n";
+													White;
+													c "\nTurn page (f)\n";
+													c "\nGo back a page(b)\n";
+													cin >> page;
+													if (page == 'b' || page == 'B')
+													{
+														ConsoleClear;
+														erase;
+														alert;
+														goto Page10_Path_1_2_1_1;
+													}
+													if (page == 'f' || page == 'F')
+													{
+														ConsoleClear;
+														erase;
+														alert;
+													Page12_Path_1_2_1_1:
+														c "Page 12:\n\n";
+														LightCyan;
+														c "\"Evan?\" you ask cautiously.\n";
+														c "\"Yes, yes\" it mumbles. \"Help me " << FirstName << "!\" his voice sounds as if it's been squeezed through a pinhole.\n";
+														c "You can't believe your eyes or ears! There's no doubt that this jack-in-the-box is Evan. \"What have they done to you?\" you blurt out.\n";
+														c "\"Help me, help me,\" the jack-in-the-box pleads. Tears flow from its eyes. It looks as if it's in serious pain.\n";
+														c "Without thinking, you drag the jack-in-the-box out the front door. Two elves try to stop you.\n";
+														c "Get away!\" you order, swatting at them like flies. You discover that the elves aren't very strong. With a lot of effort you lift the jack-in-the-box into the back of your mom's van and climb in with it. You've got to figure out a way to set Evan free! You grab the pocketknife your mom keeps in the glove compartment and cut away.\n";
+														c "As you tear the fabric away from Evan's body, you discover that he's been tied to a huge spring attached to the bottom of the box. You cut through the ropes, and Evan steps out.\n";
+														White;
+														c "\nTurn page (f)\n";
+														c "\nGo back a page(b)\n";
+														cin >> page;
+														if (page == 'b' || page == 'B')
+														{
+															ConsoleClear;
+															erase;
+															alert;
+															goto Page11_Path_1_2_1_1;
+														}
+														if (page == 'f' || page == 'F')
+														{
+															ConsoleClear;
+															erase;
+															alert;
+														Page13_Path_1_2_1_1:
+															c "Page 13:\n\n";
+															LightCyan;
+															c "Evan's legs shake as he sprawls across the van's floor. A muted scream comes from his locked jaw. You see panic in his eyes.\n";
+															c "Quickly you wrap him in the ratty old blanket that your dog sleeps on when he's riding in the van. Then you take your sleeve and try to rub off the makeup. It won't come off.\n";
+															c "It's as if his skin has been permanently stained!\n";
+															c "Slowly Evan gives you a big hug.\n";
+															c "You take the dull edge of the knife and pry open Evan's mouth. Inside you see an intricate set of metal braces that are keeping his jaw locked shut.\n";
+															c "You find a pair of pliers in the glove compartment and pry enough of the braces off Evan's teeth to allow him to speak.\n";
+															c "\"Thanks,\" he gasps.\n";
+															c "But are your problems solved?";
+															White;
+															c "\nTurn page (f)\n";
+															c "\nGo back a page(b)\n";
+															cin >> page;
+															if (page == 'b' || page == 'B')
+															{
+																ConsoleClear;
+																erase;
+																alert;
+																goto Page12_Path_1_2_1_1;
+															}
+															if (page == 'f' || page == 'F')
+															{
+																ConsoleClear;
+																erase;
+																alert;
+															Page14_Path_1_2_1_1:
+																c "Page 14:\n\n";
+																LightCyan;
+																c "In the morning the National Guard rescues you and Evan from the parking lot. They shut down the castle. Unfortunately, the adults can't be saved. They've all been turned into automations that continue to perform the same actions over and over.\n";
+																c "The doctors can't stop your mom from playing jacks, while the mayor won't get off the caboose. Mrs. Tomchin lives to play kind of the hill. They are all sent to an asylum, where they live out their days sadly repeating the same actions for years. You end up going to live with your grandparents.\n";
+																c "Evan joins you. He's lucky to have you for a friend. You're probably the only person who understands why his face is so ... colorful. The doctors can't find a way to get the clown makeup off.\n";
+															End6:
+																LightRed;
+
+																c "                          _________            ___       ___                         \n";
+																c "                              |       |   |   |         |      |\\   |   |\\         \n";
+																c "                              |       |___|   |___      |___   | \\  |   | \\        \n";
+																c "                              |       |   |   |         |      |  \\ |   | /         \n";
+																c "                              |       |   |   |___      |___   |   \\|   |/          \n";
+																White;
+																c "\n\n Go back to last decision? Go back to the menu? End game?\n";
+																c "(type back, menu, or end)\n";
+																f = 1;
+																cin >> GameEndChoice;
+																if (GameEndChoice == "back" || GameEndChoice == "Back")
+																{
+																	ConsoleClear;
+																	erase;
+																	alert;
+																	goto Page9_Path_1_2_1;
+																}
+																if (GameEndChoice == "Menu" || GameEndChoice == "menu")
+																{
+																	ConsoleClear;
+																	erase;
+																	alert;
+																	goto Menu;
+
+																}
+																if (GameEndChoice == "end" || "End")
+																{
+																	ConsoleClear;
+																	erase;
+																	alert;
+																	LightRed;
+																	c "See you soon...";
+																	return 0;
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+										if (GameChoice3 == "b" || GameChoice3 == "B")
+										{
+											ConsoleClear;
+											erase;
+											alert;
+											goto Page6_Path_1_2;
+										}
+
+
+
+									}
+
+
+								}
+
+
+
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
